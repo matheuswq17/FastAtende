@@ -1,0 +1,954 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "FastAtende" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - img "Logo FastAtende" [ref=e5]
+    - navigation "NavegaÃ§Ã£o principal" [ref=e6]:
+      - link "SoluÃ§Ã£o" [ref=e7] [cursor=pointer]:
+        - /url: "#solucao"
+      - link "Processo" [ref=e8] [cursor=pointer]:
+        - /url: "#processo"
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: "#dashboard"
+      - link "FormulÃ¡rio" [ref=e10] [cursor=pointer]:
+        - /url: "#briefing"
+    - link "Solicitar proposta" [ref=e11] [cursor=pointer]:
+      - /url: "#briefing"
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Chatbot de IA no WhatsApp para empresas que precisam atender melhor e mais rÃ¡pido
+        - heading "Seu atendimento ganha velocidade, contexto e escala sem perder o controle." [level=1] [ref=e16]
+        - paragraph [ref=e17]: A FastAtende implementa um chatbot de IA no WhatsApp para suporte, atendimento comercial e triagem, com fluxos personalizados para a rotina da sua empresa e dashboard sob medida quando a operaÃ§Ã£o precisa de acompanhamento detalhado.
+        - generic [ref=e18]:
+          - link "Preencher briefing" [ref=e19] [cursor=pointer]:
+            - /url: "#briefing"
+          - link "Ver a soluÃ§Ã£o" [ref=e20] [cursor=pointer]:
+            - /url: "#solucao"
+        - generic [ref=e21]:
+          - generic [ref=e22]: Atendimento 24/7
+          - generic [ref=e23]: Escalonamento para humano
+          - generic [ref=e24]: ImplantaÃ§Ã£o personalizada
+          - generic [ref=e25]: Dashboard opcional
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: OperaÃ§Ã£o FastAtende
+          - heading "WhatsApp com IA treinada para responder, organizar e encaminhar." [level=2] [ref=e29]
+          - generic [ref=e30]:
+            - article [ref=e31]:
+              - strong [ref=e32]: Suporte
+              - generic [ref=e33]: Respostas frequentes, triagem e direcionamento.
+            - article [ref=e34]:
+              - strong [ref=e35]: Comercial
+              - generic [ref=e36]: CaptaÃ§Ã£o, qualificaÃ§Ã£o e agendamento.
+            - article [ref=e37]:
+              - strong [ref=e38]: Dashboard
+              - generic [ref=e39]: MÃ©tricas, filas, SLAs e visibilidade da operaÃ§Ã£o.
+            - article [ref=e40]:
+              - strong [ref=e41]: Handoff
+              - generic [ref=e42]: TransferÃªncia para atendente quando necessÃ¡rio.
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: EntregÃ¡veis
+          - list [ref=e45]:
+            - listitem [ref=e46]: Mapeamento do atendimento atual
+            - listitem [ref=e47]: ConfiguraÃ§Ã£o do fluxo no WhatsApp
+            - listitem [ref=e48]: Base de respostas com IA
+            - listitem [ref=e49]: Painel personalizado se fizer sentido
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: O que a FastAtende entrega
+        - heading "Uma operaÃ§Ã£o mais organizada do primeiro contato atÃ© a visÃ£o gerencial." [level=2] [ref=e53]
+        - paragraph [ref=e54]: O projeto pode comeÃ§ar com o chatbot de IA no WhatsApp e evoluir com integraÃ§Ãµes, regras de repasse e dashboard para supervisÃ£o da sua equipe.
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - generic [ref=e57]: "01"
+          - heading "Chatbot treinado com a realidade da sua empresa" [level=3] [ref=e58]
+          - paragraph [ref=e59]: Fluxos, tom de voz, perguntas frequentes, produtos, processos internos e polÃticas de atendimento.
+        - article [ref=e60]:
+          - generic [ref=e61]: "02"
+          - heading "Triagem inteligente no WhatsApp" [level=3] [ref=e62]
+          - paragraph [ref=e63]: ClassificaÃ§Ã£o de demandas, coleta de dados do cliente e encaminhamento para o setor certo.
+        - article [ref=e64]:
+          - generic [ref=e65]: "03"
+          - heading "Escala sem perder contexto" [level=3] [ref=e66]
+          - paragraph [ref=e67]: HistÃ³rico organizado, repasse para atendimento humano e continuidade do suporte quando o caso exigir.
+        - article [ref=e68]:
+          - generic [ref=e69]: "04"
+          - heading "Dashboard personalizado quando necessÃ¡rio" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Indicadores de volume, tempo de resposta, temas recorrentes, produtividade e visÃ£o executiva.
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: Como funciona
+        - heading "ImplantaÃ§Ã£o feita para caber na sua operaÃ§Ã£o, nÃ£o o contrÃ¡rio." [level=2] [ref=e75]
+      - generic [ref=e76]:
+        - article [ref=e77]:
+          - generic [ref=e78]: "1"
+          - heading "DiagnÃ³stico" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Entendemos canal, volume, tipo de demanda, regras de atendimento e metas do projeto.
+        - article [ref=e81]:
+          - generic [ref=e82]: "2"
+          - heading "Modelagem" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Desenhamos fluxos, conteÃºdo de resposta, integraÃ§Ãµes e pontos de transferÃªncia para humano.
+        - article [ref=e85]:
+          - generic [ref=e86]: "3"
+          - heading "ImplantaÃ§Ã£o" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Configuramos o bot, estruturamos a base de conhecimento e ajustamos o comportamento da IA.
+        - article [ref=e89]:
+          - generic [ref=e90]: "4"
+          - heading "Acompanhamento" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Monitoramos performance, refinamos respostas e construÃmos dashboard se a operaÃ§Ã£o precisar.
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]: Dashboard sob medida
+        - heading "Quando a empresa precisa enxergar tudo, a gente transforma conversa em gestÃ£o." [level=2] [ref=e96]
+        - paragraph [ref=e97]: Para operaÃ§Ãµes com maior volume, mÃºltiplos atendentes ou necessidade de acompanhamento executivo, a FastAtende tambÃ©m desenvolve dashboard para centralizar indicadores, performance, gargalos e oportunidades.
+      - generic [ref=e98]:
+        - article [ref=e99]:
+          - heading "VisÃ£o operacional" [level=3] [ref=e100]
+          - paragraph [ref=e101]: Filas, temas mais frequentes, tempo mÃ©dio de resposta, repasses para humano e horas de pico.
+        - article [ref=e102]:
+          - heading "VisÃ£o gerencial" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Volume por unidade, qualidade de atendimento, produtividade, conversÃ£o e evoluÃ§Ã£o dos indicadores.
+        - article [ref=e105]:
+          - heading "VisÃ£o estratÃ©gica" [level=3] [ref=e106]
+          - paragraph [ref=e107]: DecisÃµes apoiadas por dados reais da operaÃ§Ã£o para expansÃ£o, treinamento e otimizaÃ§Ã£o contÃnua.
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - generic [ref=e110]: FormulÃ¡rio comercial
+        - heading "Preencha o briefing para receber uma proposta alinhada ao seu cenÃ¡rio." [level=2] [ref=e111]
+        - paragraph [ref=e112]: Este formulÃ¡rio reÃºne as informaÃ§Ãµes principais para entendermos a operaÃ§Ã£o, o objetivo do chatbot, necessidades de integraÃ§Ã£o e se o dashboard faz sentido para o seu caso.
+      - generic [ref=e113]:
+        - complementary [ref=e114]:
+          - generic [ref=e115]:
+            - heading "O que vamos analisar" [level=3] [ref=e116]
+            - list [ref=e117]:
+              - listitem [ref=e118]: Contexto da empresa e responsÃ¡vel pelo projeto
+              - listitem [ref=e119]: Volume e tipo de atendimento atual
+              - listitem [ref=e120]: Objetivos do bot no WhatsApp
+              - listitem [ref=e121]: IntegraÃ§Ãµes, regras e repasses
+              - listitem [ref=e122]: Necessidade de dashboard e indicadores
+              - listitem [ref=e123]: Prazo, orÃ§amento e critÃ©rios de sucesso
+          - generic [ref=e124]:
+            - heading "Resultado do envio" [level=3] [ref=e125]
+            - paragraph [ref=e126]: Ao clicar em enviar, o site baixa automaticamente uma tabela em CSV com o briefing e abre um rascunho no Gmail para o cliente mandar esse arquivo para o atendimento da FastAtende.
+            - list [ref=e127]:
+              - listitem [ref=e128]: Preencha todo o formulÃ¡rio.
+              - listitem [ref=e129]: Clique em "Baixar tabela e abrir Gmail".
+              - listitem [ref=e130]: Anexe o arquivo CSV baixado na pasta de Downloads.
+              - listitem [ref=e131]:
+                - text: Envie o e-mail para
+                - strong [ref=e132]: fastatende.comercial@gmail.com
+                - text: .
+        - generic [ref=e134]:
+          - group "1. Dados da empresa" [ref=e135]:
+            - generic [ref=e136]: 1. Dados da empresa
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - text: Empresa
+                - textbox "Empresa" [ref=e139]:
+                  - /placeholder: Nome da empresa
+              - generic [ref=e140]:
+                - text: Nome fantasia
+                - textbox "Nome fantasia" [ref=e141]:
+                  - /placeholder: Como a marca Ã© conhecida
+              - generic [ref=e142]:
+                - text: CNPJ
+                - textbox "CNPJ" [ref=e143]:
+                  - /placeholder: 00.000.000/0000-00
+              - generic [ref=e144]:
+                - text: Site
+                - textbox "Site" [ref=e145]:
+                  - /placeholder: "Ex.: empresa.com ou https://empresa.com"
+              - generic [ref=e146]:
+                - text: Segmento
+                - combobox "Segmento" [ref=e147]:
+                  - option "Selecione" [selected]
+                  - option "Varejo"
+                  - option "SaÃºde"
+                  - option "EducaÃ§Ã£o"
+                  - option "ImobiliÃ¡rio"
+                  - option "ServiÃ§os"
+                  - option "JurÃdico"
+                  - option "LogÃstica"
+                  - option "Financeiro"
+                  - option "Tecnologia"
+                  - option "Outro"
+              - generic [ref=e148]:
+                - text: Porte da empresa
+                - combobox "Porte da empresa" [ref=e149]:
+                  - option "Selecione" [selected]
+                  - option "Microempresa"
+                  - option "Pequena empresa"
+                  - option "MÃ©dia empresa"
+                  - option "Grande empresa"
+              - generic [ref=e150]:
+                - text: Cidade / Estado
+                - textbox "Cidade / Estado" [ref=e151]:
+                  - /placeholder: "Ex.: Curitiba / PR"
+              - generic [ref=e152]:
+                - text: Quantas unidades ou filiais?
+                - spinbutton "Quantas unidades ou filiais?" [ref=e153]
+          - group "2. ResponsÃ¡vel pelo projeto" [ref=e154]:
+            - generic [ref=e155]: 2. ResponsÃ¡vel pelo projeto
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - text: Nome do responsÃ¡vel
+                - textbox "Nome do responsÃ¡vel" [ref=e158]:
+                  - /placeholder: Nome completo
+              - generic [ref=e159]:
+                - text: Cargo
+                - textbox "Cargo" [ref=e160]:
+                  - /placeholder: "Ex.: gerente, diretor, dono"
+              - generic [ref=e161]:
+                - text: E-mail
+                - textbox "E-mail" [ref=e162]:
+                  - /placeholder: voce@empresa.com
+              - generic [ref=e163]:
+                - text: WhatsApp / telefone
+                - textbox "WhatsApp / telefone" [ref=e164]:
+                  - /placeholder: (00) 00000-0000
+          - group "3. WhatsApp / Meta" [ref=e165]:
+            - generic [ref=e166]: 3. WhatsApp / Meta
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]: Ja possuem numero comercial dedicado para o chatbot?
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - radio "Sim" [ref=e172]
+                    - text: Sim
+                  - generic [ref=e173]:
+                    - radio "Nao" [ref=e174]
+                    - text: Nao
+                  - generic [ref=e175]:
+                    - radio "Em definicao" [ref=e176]
+                    - text: Em definicao
+              - generic [ref=e177]:
+                - text: Esse numero ja usa WhatsApp Business ou API?
+                - combobox "Esse numero ja usa WhatsApp Business ou API?" [ref=e178]:
+                  - option "Selecione" [selected]
+                  - option "WhatsApp Business"
+                  - option "WhatsApp API"
+                  - option "Ainda nao"
+                  - option "Nao sei informar"
+              - generic [ref=e179]:
+                - generic [ref=e180]: O numero pode receber SMS ou ligacao para verificacao?
+                - generic [ref=e181]:
+                  - generic [ref=e182]:
+                    - radio "Sim" [ref=e183]
+                    - text: Sim
+                  - generic [ref=e184]:
+                    - radio "Nao" [ref=e185]
+                    - text: Nao
+                  - generic [ref=e186]:
+                    - radio "Nao sei" [ref=e187]
+                    - text: Nao sei
+              - generic [ref=e188]:
+                - generic [ref=e189]: Ja possuem Meta Business Manager?
+                - generic [ref=e190]:
+                  - generic [ref=e191]:
+                    - radio "Sim" [ref=e192]
+                    - text: Sim
+                  - generic [ref=e193]:
+                    - radio "Nao" [ref=e194]
+                    - text: Nao
+                  - generic [ref=e195]:
+                    - radio "Nao sei" [ref=e196]
+                    - text: Nao sei
+              - generic [ref=e197]:
+                - generic [ref=e198]: Ja possuem conta no Meta for Developers?
+                - generic [ref=e199]:
+                  - generic [ref=e200]:
+                    - radio "Sim" [ref=e201]
+                    - text: Sim
+                  - generic [ref=e202]:
+                    - radio "Nao" [ref=e203]
+                    - text: Nao
+                  - generic [ref=e204]:
+                    - radio "Nao sei" [ref=e205]
+                    - text: Nao sei
+              - generic [ref=e206]:
+                - generic [ref=e207]: Ja possuem conta do WhatsApp Business (WABA)?
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - radio "Sim" [ref=e210]
+                    - text: Sim
+                  - generic [ref=e211]:
+                    - radio "Nao" [ref=e212]
+                    - text: Nao
+                  - generic [ref=e213]:
+                    - radio "Nao sei" [ref=e214]
+                    - text: Nao sei
+              - generic [ref=e215]:
+                - text: Quem sera o responsavel por liberar acessos e verificacoes?
+                - textbox "Quem sera o responsavel por liberar acessos e verificacoes?" [ref=e216]:
+                  - /placeholder: Informe nome, area, cargo ou parceiro responsavel pelos acessos.
+          - group "4. Atendimento atual" [ref=e217]:
+            - generic [ref=e218]: 4. Atendimento atual
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e221]: Canais usados hoje
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - checkbox "WhatsApp" [ref=e224]
+                    - text: WhatsApp
+                  - generic [ref=e225]:
+                    - checkbox "Instagram" [ref=e226]
+                    - text: Instagram
+                  - generic [ref=e227]:
+                    - checkbox "Site" [ref=e228]
+                    - text: Site
+                  - generic [ref=e229]:
+                    - checkbox "Telefone" [ref=e230]
+                    - text: Telefone
+                  - generic [ref=e231]:
+                    - checkbox "E-mail" [ref=e232]
+                    - text: E-mail
+                  - generic [ref=e233]:
+                    - checkbox "CRM / help desk" [ref=e234]
+                    - text: CRM / help desk
+              - generic [ref=e236]:
+                - text: Volume mensal de atendimentos
+                - combobox "Volume mensal de atendimentos" [ref=e237]:
+                  - option "Selecione" [selected]
+                  - option "Ate 500"
+                  - option "500 a 2.000"
+                  - option "2.000 a 5.000"
+                  - option "5.000 a 10.000"
+                  - option "Mais de 10.000"
+              - generic [ref=e238]:
+                - text: Tamanho da equipe atual de atendimento
+                - combobox "Tamanho da equipe atual de atendimento" [ref=e239]:
+                  - option "Selecione" [selected]
+                  - option "1 a 3 pessoas"
+                  - option "4 a 10 pessoas"
+                  - option "11 a 25 pessoas"
+                  - option "Mais de 25 pessoas"
+              - generic [ref=e240]:
+                - text: Horario de atendimento
+                - textbox "Horario de atendimento" [ref=e241]:
+                  - /placeholder: "Ex.: seg a sex, 8h as 18h"
+              - generic [ref=e242]:
+                - text: Horarios de pico
+                - textbox "Horarios de pico" [ref=e243]:
+                  - /placeholder: "Ex.: 9h as 11h e 14h as 17h"
+              - generic [ref=e244]:
+                - text: Principais demandas recebidas
+                - textbox "Principais demandas recebidas" [ref=e245]:
+                  - /placeholder: "Ex.: duvidas sobre pedidos, suporte tecnico, agendamento, segunda via, orcamento..."
+              - generic [ref=e246]:
+                - text: Ferramentas usadas hoje no atendimento
+                - textbox "Ferramentas usadas hoje no atendimento" [ref=e247]:
+                  - /placeholder: "Ex.: WhatsApp Business, CRM, planilhas, ERP, plataforma de help desk..."
+          - group "5. Escopo do chatbot e automacao" [ref=e248]:
+            - generic [ref=e249]: 5. Escopo do chatbot e automacao
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - generic [ref=e252]: Objetivos do projeto
+                - generic [ref=e253]:
+                  - generic [ref=e254]:
+                    - checkbox "Reduzir tempo de resposta" [ref=e255]
+                    - text: Reduzir tempo de resposta
+                  - generic [ref=e256]:
+                    - checkbox "Automatizar perguntas frequentes" [ref=e257]
+                    - text: Automatizar perguntas frequentes
+                  - generic [ref=e258]:
+                    - checkbox "Qualificar leads" [ref=e259]
+                    - text: Qualificar leads
+                  - generic [ref=e260]:
+                    - checkbox "Aumentar conversao" [ref=e261]
+                    - text: Aumentar conversao
+                  - generic [ref=e262]:
+                    - checkbox "Escalar suporte" [ref=e263]
+                    - text: Escalar suporte
+                  - generic [ref=e264]:
+                    - checkbox "Organizar repasses para humano" [ref=e265]
+                    - text: Organizar repasses para humano
+              - generic [ref=e267]:
+                - generic [ref=e268]: O bot sera usado para
+                - generic [ref=e269]:
+                  - generic [ref=e270]:
+                    - checkbox "Atendimento" [ref=e271]
+                    - text: Atendimento
+                  - generic [ref=e272]:
+                    - checkbox "Vendas" [ref=e273]
+                    - text: Vendas
+                  - generic [ref=e274]:
+                    - checkbox "Suporte" [ref=e275]
+                    - text: Suporte
+                  - generic [ref=e276]:
+                    - checkbox "Agendamento" [ref=e277]
+                    - text: Agendamento
+                  - generic [ref=e278]:
+                    - checkbox "Cobranca" [ref=e279]
+                    - text: Cobranca
+                  - generic [ref=e280]:
+                    - checkbox "Pos-venda" [ref=e281]
+                    - text: Pos-venda
+                  - generic [ref=e282]:
+                    - checkbox "Reativacao de clientes" [ref=e283]
+                    - text: Reativacao de clientes
+              - generic [ref=e285]:
+                - generic [ref=e286]: O bot deve apenas responder ou tambem executar acoes?
+                - generic [ref=e287]:
+                  - generic [ref=e288]:
+                    - radio "Apenas responder" [ref=e289]
+                    - text: Apenas responder
+                  - generic [ref=e290]:
+                    - radio "Executar acoes" [ref=e291]
+                    - text: Executar acoes
+                  - generic [ref=e292]:
+                    - radio "Responder e executar acoes" [ref=e293]
+                    - text: Responder e executar acoes
+              - generic [ref=e294]:
+                - generic [ref=e295]: Quais acoes ele deve executar?
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - checkbox "Criar pedido" [ref=e298]
+                    - text: Criar pedido
+                  - generic [ref=e299]:
+                    - checkbox "Consultar pedido" [ref=e300]
+                    - text: Consultar pedido
+                  - generic [ref=e301]:
+                    - checkbox "Atualizar cadastro" [ref=e302]
+                    - text: Atualizar cadastro
+                  - generic [ref=e303]:
+                    - checkbox "Gerar orcamento" [ref=e304]
+                    - text: Gerar orcamento
+                  - generic [ref=e305]:
+                    - checkbox "Agendar horario" [ref=e306]
+                    - text: Agendar horario
+                  - generic [ref=e307]:
+                    - checkbox "Registrar lead" [ref=e308]
+                    - text: Registrar lead
+                  - generic [ref=e309]:
+                    - checkbox "Encaminhar para humano" [ref=e310]
+                    - text: Encaminhar para humano
+              - generic [ref=e312]:
+                - text: Casos de uso esperados
+                - textbox "Casos de uso esperados" [ref=e313]:
+                  - /placeholder: Descreva o que o bot deve fazer no WhatsApp, como responder, coletar ou encaminhar.
+              - generic [ref=e314]:
+                - text: Idiomas necessarios
+                - textbox "Idiomas necessarios" [ref=e315]:
+                  - /placeholder: "Ex.: portugues, ingles, espanhol"
+              - generic [ref=e316]:
+                - text: Tom de voz do atendimento
+                - combobox "Tom de voz do atendimento" [ref=e317]:
+                  - option "Selecione" [selected]
+                  - option "Formal"
+                  - option "Consultivo"
+                  - option "Amigavel"
+                  - option "Objetivo"
+                  - option "Misto, conforme contexto"
+          - group "6. Regras do negocio" [ref=e318]:
+            - generic [ref=e319]: 6. Regras do negocio
+            - generic [ref=e320]:
+              - generic [ref=e321]:
+                - text: Quais informacoes o bot precisa obrigatoriamente coletar?
+                - textbox "Quais informacoes o bot precisa obrigatoriamente coletar?" [ref=e322]:
+                  - /placeholder: "Ex.: nome, telefone, CPF, endereco, produto de interesse, unidade..."
+              - generic [ref=e323]:
+                - generic [ref=e324]: Existe fluxo diferente para cliente novo e cliente recorrente?
+                - generic [ref=e325]:
+                  - generic [ref=e326]:
+                    - radio "Sim" [ref=e327]
+                    - text: Sim
+                  - generic [ref=e328]:
+                    - radio "Nao" [ref=e329]
+                    - text: Nao
+                  - generic [ref=e330]:
+                    - radio "Preciso avaliar" [ref=e331]
+                    - text: Preciso avaliar
+              - generic [ref=e332]:
+                - text: Existe prioridade por tipo de cliente?
+                - textbox "Existe prioridade por tipo de cliente?" [ref=e333]:
+                  - /placeholder: "Ex.: VIP, recorrente, inadimplente, urgencia alta"
+              - generic [ref=e334]:
+                - text: Ha bairros, regioes ou areas atendidas?
+                - textbox "Ha bairros, regioes ou areas atendidas?" [ref=e335]:
+                  - /placeholder: Liste as regioes atendidas ou eventuais restricoes geograficas.
+              - generic [ref=e336]:
+                - text: Ha regras de horario, fila, limite ou SLA?
+                - textbox "Ha regras de horario, fila, limite ou SLA?" [ref=e337]:
+                  - /placeholder: "Ex.: janelas de atendimento, limite por fila, prazo de retorno, prioridade por horario..."
+              - generic [ref=e338]:
+                - text: Existem situacoes em que o atendimento deve ser bloqueado ou redirecionado?
+                - textbox "Existem situacoes em que o atendimento deve ser bloqueado ou redirecionado?" [ref=e339]:
+                  - /placeholder: "Ex.: fora da area atendida, produto indisponivel, cliente sem cadastro, caso juridico..."
+          - group "7. Handoff para humano" [ref=e340]:
+            - generic [ref=e341]: 7. Handoff para humano
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - text: Quando deve transferir para humano?
+                - textbox "Quando deve transferir para humano?" [ref=e344]:
+                  - /placeholder: "Ex.: casos criticos, cliente irritado, negociacao avancada, duvida fora do escopo..."
+              - generic [ref=e345]:
+                - text: Para quem o bot deve transferir?
+                - textbox "Para quem o bot deve transferir?" [ref=e346]:
+                  - /placeholder: "Ex.: time comercial, suporte nivel 2, financeiro, unidade local"
+              - generic [ref=e347]:
+                - generic [ref=e348]: Como a transferencia deve acontecer?
+                - generic [ref=e349]:
+                  - generic [ref=e350]:
+                    - checkbox "Grupo" [ref=e351]
+                    - text: Grupo
+                  - generic [ref=e352]:
+                    - checkbox "Atendente especifico" [ref=e353]
+                    - text: Atendente especifico
+                  - generic [ref=e354]:
+                    - checkbox "E-mail" [ref=e355]
+                    - text: E-mail
+                  - generic [ref=e356]:
+                    - checkbox "CRM" [ref=e357]
+                    - text: CRM
+                  - generic [ref=e358]:
+                    - checkbox "Painel interno" [ref=e359]
+                    - text: Painel interno
+              - generic [ref=e360]:
+                - text: Em quais horarios ha humano disponivel?
+                - textbox "Em quais horarios ha humano disponivel?" [ref=e361]:
+                  - /placeholder: "Ex.: seg a sex, 8h as 18h; plantao aos sabados"
+              - generic [ref=e362]:
+                - generic [ref=e363]: O cliente deve ser informado de que foi transferido?
+                - generic [ref=e364]:
+                  - generic [ref=e365]:
+                    - radio "Sim" [ref=e366]
+                    - text: Sim
+                  - generic [ref=e367]:
+                    - radio "Nao" [ref=e368]
+                    - text: Nao
+                  - generic [ref=e369]:
+                    - radio "Depende do caso" [ref=e370]
+                    - text: Depende do caso
+              - generic [ref=e371]:
+                - generic [ref=e372]: O atendente humano continuara no mesmo WhatsApp ou em outro canal?
+                - generic [ref=e373]:
+                  - generic [ref=e374]:
+                    - radio "Mesmo WhatsApp" [ref=e375]
+                    - text: Mesmo WhatsApp
+                  - generic [ref=e376]:
+                    - radio "Outro canal" [ref=e377]
+                    - text: Outro canal
+                  - generic [ref=e378]:
+                    - radio "Depende da operacao" [ref=e379]
+                    - text: Depende da operacao
+          - group "8. Base de conhecimento" [ref=e380]:
+            - generic [ref=e381]: 8. Base de conhecimento
+            - generic [ref=e382]:
+              - generic [ref=e383]:
+                - text: Base de conhecimento disponivel
+                - textbox "Base de conhecimento disponivel" [ref=e384]:
+                  - /placeholder: Links, FAQs, PDFs, catalogo, documentos internos, scripts de atendimento...
+              - generic [ref=e385]:
+                - generic [ref=e386]: A base de conhecimento esta atualizada?
+                - generic [ref=e387]:
+                  - generic [ref=e388]:
+                    - radio "Sim" [ref=e389]
+                    - text: Sim
+                  - generic [ref=e390]:
+                    - radio "Nao" [ref=e391]
+                    - text: Nao
+                  - generic [ref=e392]:
+                    - radio "Parcialmente" [ref=e393]
+                    - text: Parcialmente
+              - generic [ref=e394]:
+                - text: Quem sera responsavel por enviar e revisar os materiais?
+                - textbox "Quem sera responsavel por enviar e revisar os materiais?" [ref=e395]:
+                  - /placeholder: Nome, area ou responsavel pelo conteudo
+              - generic [ref=e396]:
+                - generic [ref=e397]: Os materiais podem ser usados para treinar um assistente?
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - radio "Sim" [ref=e400]
+                    - text: Sim
+                  - generic [ref=e401]:
+                    - radio "Nao" [ref=e402]
+                    - text: Nao
+                  - generic [ref=e403]:
+                    - radio "Preciso avaliar" [ref=e404]
+                    - text: Preciso avaliar
+              - generic [ref=e405]:
+                - generic [ref=e406]: Ha respostas padrao ja aprovadas pela empresa?
+                - generic [ref=e407]:
+                  - generic [ref=e408]:
+                    - radio "Sim" [ref=e409]
+                    - text: Sim
+                  - generic [ref=e410]:
+                    - radio "Nao" [ref=e411]
+                    - text: Nao
+                  - generic [ref=e412]:
+                    - radio "Parcialmente" [ref=e413]
+                    - text: Parcialmente
+              - generic [ref=e414]:
+                - text: Ha informacoes sensiveis ou que nao podem ser usadas pelo bot?
+                - textbox "Ha informacoes sensiveis ou que nao podem ser usadas pelo bot?" [ref=e415]:
+                  - /placeholder: Descreva restricoes de uso, respostas proibidas ou conteudos sensiveis.
+          - group "9. Dashboard e operacao" [ref=e416]:
+            - generic [ref=e417]: 9. Dashboard e operacao
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - generic [ref=e420]: Precisa de dashboard?
+                - generic [ref=e421]:
+                  - generic [ref=e422]:
+                    - radio "Sim" [ref=e423]
+                    - text: Sim
+                  - generic [ref=e424]:
+                    - radio "Talvez, quero avaliar" [ref=e425]
+                    - text: Talvez, quero avaliar
+                  - generic [ref=e426]:
+                    - radio "Nao neste momento" [ref=e427]
+                    - text: Nao neste momento
+              - generic [ref=e428]:
+                - text: Quantas pessoas precisam acessar o painel?
+                - spinbutton "Quantas pessoas precisam acessar o painel?" [ref=e429]
+              - generic [ref=e430]:
+                - generic [ref=e431]: O painel sera usado por
+                - generic [ref=e432]:
+                  - generic [ref=e433]:
+                    - checkbox "Operacao" [ref=e434]
+                    - text: Operacao
+                  - generic [ref=e435]:
+                    - checkbox "Gestao" [ref=e436]
+                    - text: Gestao
+                  - generic [ref=e437]:
+                    - checkbox "Vendas" [ref=e438]
+                    - text: Vendas
+                  - generic [ref=e439]:
+                    - checkbox "Suporte" [ref=e440]
+                    - text: Suporte
+                  - generic [ref=e441]:
+                    - checkbox "Diretoria" [ref=e442]
+                    - text: Diretoria
+              - generic [ref=e443]:
+                - text: O que cada perfil precisa ver?
+                - textbox "O que cada perfil precisa ver?" [ref=e444]:
+                  - /placeholder: Descreva o que operacao, gestao, vendas, suporte ou diretoria precisam acompanhar.
+              - generic [ref=e445]:
+                - generic [ref=e446]: Indicadores desejados
+                - generic [ref=e447]:
+                  - generic [ref=e448]:
+                    - checkbox "Volume de atendimentos" [ref=e449]
+                    - text: Volume de atendimentos
+                  - generic [ref=e450]:
+                    - checkbox "Tempo medio de resposta" [ref=e451]
+                    - text: Tempo medio de resposta
+                  - generic [ref=e452]:
+                    - checkbox "Temas mais recorrentes" [ref=e453]
+                    - text: Temas mais recorrentes
+                  - generic [ref=e454]:
+                    - checkbox "Taxa de transferencia para humano" [ref=e455]
+                    - text: Taxa de transferencia para humano
+                  - generic [ref=e456]:
+                    - checkbox "Conversao" [ref=e457]
+                    - text: Conversao
+                  - generic [ref=e458]:
+                    - checkbox "Produtividade por unidade ou equipe" [ref=e459]
+                    - text: Produtividade por unidade ou equipe
+              - generic [ref=e460]:
+                - text: Frequencia de acompanhamento
+                - combobox "Frequencia de acompanhamento" [ref=e461]:
+                  - option "Selecione" [selected]
+                  - option "Diaria"
+                  - option "Semanal"
+                  - option "Quinzenal"
+                  - option "Mensal"
+              - generic [ref=e462]:
+                - generic [ref=e463]: Precisam de historico de conversas?
+                - generic [ref=e464]:
+                  - generic [ref=e465]:
+                    - radio "Sim" [ref=e466]
+                    - text: Sim
+                  - generic [ref=e467]:
+                    - radio "Nao" [ref=e468]
+                    - text: Nao
+                  - generic [ref=e469]:
+                    - radio "Talvez" [ref=e470]
+                    - text: Talvez
+              - generic [ref=e471]:
+                - generic [ref=e472]: Precisam de exportacao de dados?
+                - generic [ref=e473]:
+                  - generic [ref=e474]:
+                    - radio "Sim" [ref=e475]
+                    - text: Sim
+                  - generic [ref=e476]:
+                    - radio "Nao" [ref=e477]
+                    - text: Nao
+                  - generic [ref=e478]:
+                    - radio "Talvez" [ref=e479]
+                    - text: Talvez
+              - generic [ref=e480]:
+                - generic [ref=e481]: Precisam de filtros no painel?
+                - generic [ref=e482]:
+                  - generic [ref=e483]:
+                    - checkbox "Unidade" [ref=e484]
+                    - text: Unidade
+                  - generic [ref=e485]:
+                    - checkbox "Atendente" [ref=e486]
+                    - text: Atendente
+                  - generic [ref=e487]:
+                    - checkbox "Periodo" [ref=e488]
+                    - text: Periodo
+                  - generic [ref=e489]:
+                    - checkbox "Assunto" [ref=e490]
+                    - text: Assunto
+              - generic [ref=e491]:
+                - generic [ref=e492]: Precisam de alertas ou notificacoes?
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - radio "Sim" [ref=e495]
+                    - text: Sim
+                  - generic [ref=e496]:
+                    - radio "Nao" [ref=e497]
+                    - text: Nao
+                  - generic [ref=e498]:
+                    - radio "Talvez" [ref=e499]
+                    - text: Talvez
+          - group "10. Integracoes" [ref=e500]:
+            - generic [ref=e501]: 10. Integracoes
+            - generic [ref=e502]:
+              - generic [ref=e503]:
+                - text: Integracoes desejadas
+                - textbox "Integracoes desejadas" [ref=e504]:
+                  - /placeholder: "Ex.: CRM, ERP, agenda, sistema interno, planilhas, API propria..."
+              - generic [ref=e505]:
+                - generic [ref=e506]: Existe API disponivel?
+                - generic [ref=e507]:
+                  - generic [ref=e508]:
+                    - radio "Sim" [ref=e509]
+                    - text: Sim
+                  - generic [ref=e510]:
+                    - radio "Nao" [ref=e511]
+                    - text: Nao
+                  - generic [ref=e512]:
+                    - radio "Nao sei" [ref=e513]
+                    - text: Nao sei
+              - generic [ref=e514]:
+                - generic [ref=e515]: Existe documentacao da API?
+                - generic [ref=e516]:
+                  - generic [ref=e517]:
+                    - radio "Sim" [ref=e518]
+                    - text: Sim
+                  - generic [ref=e519]:
+                    - radio "Nao" [ref=e520]
+                    - text: Nao
+                  - generic [ref=e521]:
+                    - radio "Nao sei" [ref=e522]
+                    - text: Nao sei
+              - generic [ref=e523]:
+                - generic [ref=e524]: Existe acesso sandbox ou teste?
+                - generic [ref=e525]:
+                  - generic [ref=e526]:
+                    - radio "Sim" [ref=e527]
+                    - text: Sim
+                  - generic [ref=e528]:
+                    - radio "Nao" [ref=e529]
+                    - text: Nao
+                  - generic [ref=e530]:
+                    - radio "Nao sei" [ref=e531]
+                    - text: Nao sei
+              - generic [ref=e532]:
+                - text: Qual sistema sera a fonte principal da verdade?
+                - textbox "Qual sistema sera a fonte principal da verdade?" [ref=e533]:
+                  - /placeholder: "Ex.: ERP, CRM, sistema interno, planilha central"
+              - generic [ref=e534]:
+                - generic [ref=e535]: Se nao houver API, aceitam integracao por
+                - generic [ref=e536]:
+                  - generic [ref=e537]:
+                    - checkbox "Planilha" [ref=e538]
+                    - text: Planilha
+                  - generic [ref=e539]:
+                    - checkbox "Webhook" [ref=e540]
+                    - text: Webhook
+                  - generic [ref=e541]:
+                    - checkbox "Banco de dados" [ref=e542]
+                    - text: Banco de dados
+                  - generic [ref=e543]:
+                    - checkbox "Nao se aplica" [ref=e544]
+                    - text: Nao se aplica
+          - group "11. Seguranca e LGPD" [ref=e545]:
+            - generic [ref=e546]: 11. Seguranca e LGPD
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - generic [ref=e549]: Ha exigencia de LGPD / compliance?
+                - generic [ref=e550]:
+                  - generic [ref=e551]:
+                    - radio "Sim" [ref=e552]
+                    - text: Sim
+                  - generic [ref=e553]:
+                    - radio "Nao" [ref=e554]
+                    - text: Nao
+                  - generic [ref=e555]:
+                    - radio "Preciso entender melhor" [ref=e556]
+                    - text: Preciso entender melhor
+              - generic [ref=e557]:
+                - generic [ref=e558]: O bot tratara dados pessoais?
+                - generic [ref=e559]:
+                  - generic [ref=e560]:
+                    - radio "Sim" [ref=e561]
+                    - text: Sim
+                  - generic [ref=e562]:
+                    - radio "Nao" [ref=e563]
+                    - text: Nao
+                  - generic [ref=e564]:
+                    - radio "Nao sei" [ref=e565]
+                    - text: Nao sei
+              - generic [ref=e566]:
+                - generic [ref=e567]: O bot tratara dados sensiveis?
+                - generic [ref=e568]:
+                  - generic [ref=e569]:
+                    - radio "Sim" [ref=e570]
+                    - text: Sim
+                  - generic [ref=e571]:
+                    - radio "Nao" [ref=e572]
+                    - text: Nao
+                  - generic [ref=e573]:
+                    - radio "Nao sei" [ref=e574]
+                    - text: Nao sei
+              - generic [ref=e575]:
+                - generic [ref=e576]: Existe politica de retencao de dados?
+                - generic [ref=e577]:
+                  - generic [ref=e578]:
+                    - radio "Sim" [ref=e579]
+                    - text: Sim
+                  - generic [ref=e580]:
+                    - radio "Nao" [ref=e581]
+                    - text: Nao
+                  - generic [ref=e582]:
+                    - radio "Em definicao" [ref=e583]
+                    - text: Em definicao
+              - generic [ref=e584]:
+                - text: Ha restricoes sobre onde os dados podem ser armazenados?
+                - textbox "Ha restricoes sobre onde os dados podem ser armazenados?" [ref=e585]:
+                  - /placeholder: "Ex.: somente Brasil, somente nuvem homologada, sem armazenamento fora do CRM..."
+              - generic [ref=e586]:
+                - text: E necessario termo de confidencialidade ou DPA?
+                - combobox "E necessario termo de confidencialidade ou DPA?" [ref=e587]:
+                  - option "Selecione" [selected]
+                  - option "NDA"
+                  - option "DPA"
+                  - option "Ambos"
+                  - option "Nenhum"
+                  - option "Preciso avaliar"
+              - generic [ref=e588]:
+                - generic [ref=e589]: Ha mensagens que exigem aprovacao juridica/compliance?
+                - generic [ref=e590]:
+                  - generic [ref=e591]:
+                    - radio "Sim" [ref=e592]
+                    - text: Sim
+                  - generic [ref=e593]:
+                    - radio "Nao" [ref=e594]
+                    - text: Nao
+                  - generic [ref=e595]:
+                    - radio "Algumas mensagens" [ref=e596]
+                    - text: Algumas mensagens
+          - group "12. Governanca e aprovacoes" [ref=e597]:
+            - generic [ref=e598]: 12. Governanca e aprovacoes
+            - generic [ref=e599]:
+              - generic [ref=e600]:
+                - text: Quem aprova escopo?
+                - textbox "Quem aprova escopo?" [ref=e601]:
+                  - /placeholder: Nome, cargo ou area responsavel
+              - generic [ref=e602]:
+                - text: Quem aprova conteudo e mensagens?
+                - textbox "Quem aprova conteudo e mensagens?" [ref=e603]:
+                  - /placeholder: Nome, cargo ou area responsavel
+              - generic [ref=e604]:
+                - text: Quem aprova acessos tecnicos?
+                - textbox "Quem aprova acessos tecnicos?" [ref=e605]:
+                  - /placeholder: Nome, cargo ou area responsavel
+              - generic [ref=e606]:
+                - text: Quem aprova proposta comercial?
+                - textbox "Quem aprova proposta comercial?" [ref=e607]:
+                  - /placeholder: Nome, cargo ou area responsavel
+              - generic [ref=e608]:
+                - generic [ref=e609]: Existe equipe de TI envolvida?
+                - generic [ref=e610]:
+                  - generic [ref=e611]:
+                    - radio "Sim" [ref=e612]
+                    - text: Sim
+                  - generic [ref=e613]:
+                    - radio "Nao" [ref=e614]
+                    - text: Nao
+                  - generic [ref=e615]:
+                    - radio "Ainda nao sei" [ref=e616]
+                    - text: Ainda nao sei
+              - generic [ref=e617]:
+                - generic [ref=e618]: Existe equipe de marketing ou juridico envolvida?
+                - generic [ref=e619]:
+                  - generic [ref=e620]:
+                    - radio "Sim" [ref=e621]
+                    - text: Sim
+                  - generic [ref=e622]:
+                    - radio "Nao" [ref=e623]
+                    - text: Nao
+                  - generic [ref=e624]:
+                    - radio "Ainda nao sei" [ref=e625]
+                    - text: Ainda nao sei
+              - generic [ref=e626]:
+                - text: Como e o processo de aprovacao interna?
+                - textbox "Como e o processo de aprovacao interna?" [ref=e627]:
+                  - /placeholder: Quem decide, quem aprova, e o que precisa estar na proposta?
+          - group "13. Implantacao, proposta e metas" [ref=e628]:
+            - generic [ref=e629]: 13. Implantacao, proposta e metas
+            - generic [ref=e630]:
+              - generic [ref=e631]:
+                - text: Prazo desejado para entrar em operacao
+                - combobox "Prazo desejado para entrar em operacao" [ref=e632]:
+                  - option "Selecione" [selected]
+                  - option "Urgente, nas proximas 2 semanas"
+                  - option "Em ate 30 dias"
+                  - option "Em ate 60 dias"
+                  - option "Sem prazo fechado ainda"
+              - generic [ref=e633]:
+                - text: Faixa de investimento prevista
+                - combobox "Faixa de investimento prevista" [ref=e634]:
+                  - option "Selecione" [selected]
+                  - option "Ainda nao defini"
+                  - option "Ate R$ 3 mil"
+                  - option "R$ 3 mil a R$ 8 mil"
+                  - option "R$ 8 mil a R$ 20 mil"
+                  - option "Acima de R$ 20 mil"
+              - generic [ref=e635]:
+                - text: Como voces vao medir sucesso nesse projeto?
+                - textbox "Como voces vao medir sucesso nesse projeto?" [ref=e636]:
+                  - /placeholder: "Ex.: reduzir fila, responder mais rapido, melhorar conversao, ganhar visibilidade..."
+              - generic [ref=e637]:
+                - text: Meta de tempo de resposta
+                - textbox "Meta de tempo de resposta" [ref=e638]:
+                  - /placeholder: "Ex.: responder em ate 1 minuto"
+              - generic [ref=e639]:
+                - text: Meta de automacao
+                - textbox "Meta de automacao" [ref=e640]:
+                  - /placeholder: "Ex.: automatizar 60% dos contatos"
+              - generic [ref=e641]:
+                - text: Meta de reducao de fila
+                - textbox "Meta de reducao de fila" [ref=e642]:
+                  - /placeholder: "Ex.: reduzir fila em 40%"
+              - generic [ref=e643]:
+                - text: Meta de conversao
+                - textbox "Meta de conversao" [ref=e644]:
+                  - /placeholder: "Ex.: aumentar conversao em 15%"
+              - generic [ref=e645]:
+                - text: Meta de satisfacao
+                - textbox "Meta de satisfacao" [ref=e646]:
+                  - /placeholder: "Ex.: CSAT acima de 85%"
+              - generic [ref=e647]:
+                - text: Meta de economia operacional
+                - textbox "Meta de economia operacional" [ref=e648]:
+                  - /placeholder: "Ex.: reduzir custo mensal do atendimento em 20%"
+              - generic [ref=e649]:
+                - text: Informacoes adicionais
+                - textbox "Informacoes adicionais" [ref=e650]:
+                  - /placeholder: Conte qualquer detalhe importante para a proposta.
+              - generic [ref=e651]:
+                - checkbox "Autorizo o contato da FastAtende para apresentar proposta, esclarecimentos e proximos passos do projeto." [ref=e652]
+                - generic [ref=e653]: Autorizo o contato da FastAtende para apresentar proposta, esclarecimentos e proximos passos do projeto.
+          - generic [ref=e654]:
+            - button "Baixar tabela e abrir Gmail" [ref=e655] [cursor=pointer]
+            - button "Limpar formulÃ¡rio" [ref=e656] [cursor=pointer]
+          - paragraph [ref=e657]: O navegador nao consegue anexar arquivo automaticamente no Gmail. Por isso, a tabela sera baixada e o cliente precisara anexar o CSV manualmente antes de enviar a mensagem.
+  - contentinfo [ref=e658]:
+    - paragraph [ref=e659]:
+      - strong [ref=e660]: FastAtende
+      - text: "| IA no WhatsApp para suporte, atendimento e operaÃ§Ã£o com visibilidade."
+    - paragraph [ref=e661]: © 2026 FastAtende. Todos os direitos reservados.

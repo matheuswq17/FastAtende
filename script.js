@@ -15,6 +15,11 @@ let latestGmailUrl = "";
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
 const recipientEmail = "fastatende.comercial@gmail.com";
+const actionModesThatRequireActions = new Set([
+  "Executar acoes",
+  "Responder e executar acoes"
+]);
+
 const groupRules = [
   {
     name: "channels",
@@ -23,6 +28,170 @@ const groupRules = [
   {
     name: "goals",
     message: "Selecione pelo menos um objetivo do projeto."
+  },
+  {
+    name: "botUses",
+    message: "Selecione pelo menos um uso principal do bot."
+  }
+];
+
+const briefingSections = [
+  {
+    title: "1. DADOS DA EMPRESA",
+    fields: [
+      ["Empresa", "companyName"],
+      ["Nome fantasia", "brandName"],
+      ["CNPJ", "cnpj"],
+      ["Site", "website"],
+      ["Segmento", "segment"],
+      ["Porte", "companySize"],
+      ["Cidade/Estado", "location"],
+      ["Unidades/filiais", "branches"]
+    ]
+  },
+  {
+    title: "2. RESPONSAVEL PELO PROJETO",
+    fields: [
+      ["Nome", "contactName"],
+      ["Cargo", "contactRole"],
+      ["E-mail", "contactEmail"],
+      ["Telefone/WhatsApp", "contactPhone"]
+    ]
+  },
+  {
+    title: "3. WHATSAPP / META",
+    fields: [
+      ["Numero dedicado para o chatbot", "hasDedicatedNumber"],
+      ["Setup atual do numero", "whatsappSetup"],
+      ["Pode receber SMS/ligacao para verificacao", "canReceiveVerification"],
+      ["Meta Business Manager", "hasMetaBusinessManager"],
+      ["Meta for Developers", "hasMetaDevelopers"],
+      ["Conta WABA", "hasWaba"],
+      ["Responsavel por acessos e verificacoes", "metaAccessOwner"]
+    ]
+  },
+  {
+    title: "4. ATENDIMENTO ATUAL",
+    fields: [
+      ["Canais atuais", "channels"],
+      ["Volume mensal", "monthlyVolume"],
+      ["Tamanho da equipe", "teamSize"],
+      ["Horario de atendimento", "serviceHours"],
+      ["Horarios de pico", "peakHours"],
+      ["Principais demandas", "topDemands"],
+      ["Ferramentas atuais", "currentTools"]
+    ]
+  },
+  {
+    title: "5. ESCOPO DO CHATBOT E AUTOMACAO",
+    fields: [
+      ["Objetivos", "goals"],
+      ["Uso principal do bot", "botUses"],
+      ["Modo de atuacao do bot", "botActionMode"],
+      ["Acoes que o bot deve executar", "automationActions"],
+      ["Casos de uso esperados", "useCases"],
+      ["Idiomas", "languages"],
+      ["Tom de voz", "tone"]
+    ]
+  },
+  {
+    title: "6. REGRAS DO NEGOCIO",
+    fields: [
+      ["Informacoes obrigatorias a coletar", "requiredCollectedInfo"],
+      ["Fluxo diferente para novo/recorrente", "differentClientFlow"],
+      ["Prioridade por tipo de cliente", "clientPriorityRules"],
+      ["Bairros/regioes/areas atendidas", "serviceAreas"],
+      ["Regras de horario/fila/limite/SLA", "operationConstraints"],
+      ["Cenarios de bloqueio ou redirecionamento", "blockedScenarios"]
+    ]
+  },
+  {
+    title: "7. HANDOFF PARA HUMANO",
+    fields: [
+      ["Quando transferir para humano", "handoffRules"],
+      ["Para quem transferir", "handoffTarget"],
+      ["Como a transferencia deve acontecer", "handoffMethods"],
+      ["Horarios com humano disponivel", "humanAvailability"],
+      ["Cliente deve ser informado da transferencia", "informTransfer"],
+      ["Canal apos handoff", "sameChannelAfterHandoff"]
+    ]
+  },
+  {
+    title: "8. BASE DE CONHECIMENTO",
+    fields: [
+      ["Base de conhecimento disponivel", "knowledgeBase"],
+      ["Base atualizada", "knowledgeUpdated"],
+      ["Responsavel pelos materiais", "knowledgeOwner"],
+      ["Materiais podem treinar o assistente", "canTrainAssistant"],
+      ["Respostas padrao aprovadas", "approvedAnswers"],
+      ["Restricoes de conteudo sensivel", "sensitiveInfoLimits"]
+    ]
+  },
+  {
+    title: "9. DASHBOARD E OPERACAO",
+    fields: [
+      ["Precisa de dashboard", "dashboardInterest"],
+      ["Usuarios do painel", "dashboardUsers"],
+      ["Perfis que usarao o painel", "dashboardAudience"],
+      ["O que cada perfil precisa ver", "dashboardAudienceNeeds"],
+      ["Indicadores desejados", "dashboardMetrics"],
+      ["Frequencia de acompanhamento", "reportFrequency"],
+      ["Precisa de historico de conversas", "needConversationHistory"],
+      ["Precisa de exportacao de dados", "needDataExport"],
+      ["Filtros desejados no painel", "dashboardFilters"],
+      ["Precisa de alertas/notificacoes", "needAlerts"]
+    ]
+  },
+  {
+    title: "10. INTEGRACOES",
+    fields: [
+      ["Integracoes desejadas", "integrations"],
+      ["Existe API disponivel", "hasApi"],
+      ["Existe documentacao da API", "hasApiDocs"],
+      ["Existe sandbox/teste", "hasSandbox"],
+      ["Fonte principal da verdade", "sourceOfTruth"],
+      ["Alternativas se nao houver API", "integrationFallbacks"]
+    ]
+  },
+  {
+    title: "11. SEGURANCA E LGPD",
+    fields: [
+      ["Exigencia de LGPD/compliance", "complianceNeed"],
+      ["Trata dados pessoais", "handlesPersonalData"],
+      ["Trata dados sensiveis", "handlesSensitiveData"],
+      ["Politica de retencao de dados", "hasRetentionPolicy"],
+      ["Restricoes de armazenamento", "storageRestrictions"],
+      ["NDA / DPA", "confidentialityNeed"],
+      ["Mensagens com aprovacao juridica/compliance", "legalApprovalMessages"]
+    ]
+  },
+  {
+    title: "12. GOVERNANCA E APROVACOES",
+    fields: [
+      ["Quem aprova escopo", "scopeApprover"],
+      ["Quem aprova conteudo/mensagens", "contentApprover"],
+      ["Quem aprova acessos tecnicos", "techApprover"],
+      ["Quem aprova proposta comercial", "commercialApprover"],
+      ["Existe equipe de TI envolvida", "hasItTeam"],
+      ["Existe marketing/juridico envolvido", "marketingLegalInvolved"],
+      ["Processo de aprovacao interna", "approvalFlow"]
+    ]
+  },
+  {
+    title: "13. IMPLANTACAO, PROPOSTA E METAS",
+    fields: [
+      ["Prazo para entrar em operacao", "goLive"],
+      ["Faixa de investimento", "budget"],
+      ["Criterios de sucesso", "successCriteria"],
+      ["Meta de tempo de resposta", "responseTimeGoal"],
+      ["Meta de automacao", "automationGoal"],
+      ["Meta de reducao de fila", "queueReductionGoal"],
+      ["Meta de conversao", "conversionGoal"],
+      ["Meta de satisfacao", "satisfactionGoal"],
+      ["Meta de economia operacional", "operationalSavingsGoal"],
+      ["Informacoes adicionais", "notes"],
+      ["Consentimento", "consent"]
+    ]
   }
 ];
 
@@ -35,23 +204,6 @@ function setGroupError(name, message) {
   if (target) {
     target.textContent = message;
   }
-}
-
-function validateGroups() {
-  let isValid = true;
-
-  groupRules.forEach((rule) => {
-    const values = getCheckedValues(rule.name);
-    if (values.length === 0) {
-      setGroupError(rule.name, rule.message);
-      isValid = false;
-      return;
-    }
-
-    setGroupError(rule.name, "");
-  });
-
-  return isValid;
 }
 
 function formDataToObject(formData) {
@@ -80,106 +232,59 @@ function toList(value) {
   return value;
 }
 
-function buildSummary(payload) {
-  const lines = [
-    "NOVO BRIEFING COMERCIAL - FASTATENDE",
-    "",
-    "1. DADOS DA EMPRESA",
-    `Empresa: ${toList(payload.companyName)}`,
-    `Nome fantasia: ${toList(payload.brandName)}`,
-    `CNPJ: ${toList(payload.cnpj)}`,
-    `Site: ${toList(payload.website)}`,
-    `Segmento: ${toList(payload.segment)}`,
-    `Porte: ${toList(payload.companySize)}`,
-    `Cidade/Estado: ${toList(payload.location)}`,
-    `Unidades/filiais: ${toList(payload.branches)}`,
-    "",
-    "2. RESPONSAVEL PELO PROJETO",
-    `Nome: ${toList(payload.contactName)}`,
-    `Cargo: ${toList(payload.contactRole)}`,
-    `E-mail: ${toList(payload.contactEmail)}`,
-    `Telefone/WhatsApp: ${toList(payload.contactPhone)}`,
-    "",
-    "3. ATENDIMENTO ATUAL",
-    `Canais atuais: ${toList(payload.channels)}`,
-    `Volume mensal: ${toList(payload.monthlyVolume)}`,
-    `Tamanho da equipe: ${toList(payload.teamSize)}`,
-    `Horario de atendimento: ${toList(payload.serviceHours)}`,
-    `Horarios de pico: ${toList(payload.peakHours)}`,
-    `Principais demandas: ${toList(payload.topDemands)}`,
-    `Ferramentas atuais: ${toList(payload.currentTools)}`,
-    "",
-    "4. ESCOPO DO CHATBOT",
-    `Objetivos: ${toList(payload.goals)}`,
-    `Casos de uso esperados: ${toList(payload.useCases)}`,
-    `Base de conhecimento: ${toList(payload.knowledgeBase)}`,
-    `Regras de transferencia para humano: ${toList(payload.handoffRules)}`,
-    `Integracoes desejadas: ${toList(payload.integrations)}`,
-    `Idiomas: ${toList(payload.languages)}`,
-    `Tom de voz: ${toList(payload.tone)}`,
-    "",
-    "5. DASHBOARD E GESTAO",
-    `Precisa de dashboard: ${toList(payload.dashboardInterest)}`,
-    `Usuarios do painel: ${toList(payload.dashboardUsers)}`,
-    `Indicadores desejados: ${toList(payload.dashboardMetrics)}`,
-    `Frequencia de acompanhamento: ${toList(payload.reportFrequency)}`,
-    `LGPD/compliance: ${toList(payload.complianceNeed)}`,
-    "",
-    "6. IMPLANTACAO E PROPOSTA",
-    `Prazo para entrar em operacao: ${toList(payload.goLive)}`,
-    `Faixa de investimento: ${toList(payload.budget)}`,
-    `Processo de aprovacao: ${toList(payload.approvalFlow)}`,
-    `Criterios de sucesso: ${toList(payload.successCriteria)}`,
-    `Informacoes adicionais: ${toList(payload.notes)}`,
-    `Consentimento: ${toList(payload.consent)}`,
-    "",
-    "Resumo gerado automaticamente pela landing page FastAtende."
-  ];
+function validateGroups(payload) {
+  let isValid = true;
 
+  groupRules.forEach((rule) => {
+    const values = getCheckedValues(rule.name);
+    if (values.length === 0) {
+      setGroupError(rule.name, rule.message);
+      isValid = false;
+      return;
+    }
+
+    setGroupError(rule.name, "");
+  });
+
+  if (actionModesThatRequireActions.has(payload.botActionMode) && getCheckedValues("automationActions").length === 0) {
+    setGroupError("automationActions", "Selecione pelo menos uma acao que o bot deve executar.");
+    isValid = false;
+  } else {
+    setGroupError("automationActions", "");
+  }
+
+  return isValid;
+}
+
+function buildSummary(payload) {
+  const lines = ["NOVO BRIEFING COMERCIAL - FASTATENDE", ""];
+
+  briefingSections.forEach((section, index) => {
+    lines.push(section.title);
+
+    section.fields.forEach(([label, key]) => {
+      lines.push(`${label}: ${toList(payload[key])}`);
+    });
+
+    if (index < briefingSections.length - 1) {
+      lines.push("");
+    }
+  });
+
+  lines.push("", "Resumo gerado automaticamente pela landing page FastAtende.");
   return lines.join("\n");
 }
 
 function buildCsvRows(payload) {
-  return [
-    ["Campo", "Valor"],
-    ["Empresa", toList(payload.companyName)],
-    ["Nome fantasia", toList(payload.brandName)],
-    ["CNPJ", toList(payload.cnpj)],
-    ["Site", toList(payload.website)],
-    ["Segmento", toList(payload.segment)],
-    ["Porte da empresa", toList(payload.companySize)],
-    ["Cidade / Estado", toList(payload.location)],
-    ["Unidades / filiais", toList(payload.branches)],
-    ["Nome do responsavel", toList(payload.contactName)],
-    ["Cargo", toList(payload.contactRole)],
-    ["E-mail", toList(payload.contactEmail)],
-    ["WhatsApp / telefone", toList(payload.contactPhone)],
-    ["Canais usados hoje", toList(payload.channels)],
-    ["Volume mensal", toList(payload.monthlyVolume)],
-    ["Tamanho da equipe", toList(payload.teamSize)],
-    ["Horario de atendimento", toList(payload.serviceHours)],
-    ["Horarios de pico", toList(payload.peakHours)],
-    ["Principais demandas", toList(payload.topDemands)],
-    ["Ferramentas atuais", toList(payload.currentTools)],
-    ["Objetivos", toList(payload.goals)],
-    ["Casos de uso esperados", toList(payload.useCases)],
-    ["Base de conhecimento", toList(payload.knowledgeBase)],
-    ["Regras de transferencia para humano", toList(payload.handoffRules)],
-    ["Integracoes desejadas", toList(payload.integrations)],
-    ["Idiomas", toList(payload.languages)],
-    ["Tom de voz", toList(payload.tone)],
-    ["Precisa de dashboard", toList(payload.dashboardInterest)],
-    ["Usuarios do painel", toList(payload.dashboardUsers)],
-    ["Indicadores desejados", toList(payload.dashboardMetrics)],
-    ["Frequencia de acompanhamento", toList(payload.reportFrequency)],
-    ["LGPD / compliance", toList(payload.complianceNeed)],
-    ["Prazo para entrar em operacao", toList(payload.goLive)],
-    ["Faixa de investimento", toList(payload.budget)],
-    ["Processo de aprovacao", toList(payload.approvalFlow)],
-    ["Criterios de sucesso", toList(payload.successCriteria)],
-    ["Informacoes adicionais", toList(payload.notes)],
-    ["Consentimento", toList(payload.consent)]
-  ];
+  const rows = [["Secao", "Campo", "Valor"]];
+
+  briefingSections.forEach((section) => {
+    section.fields.forEach(([label, key]) => {
+      rows.push([section.title, label, toList(payload[key])]);
+    });
+  });
+
+  return rows;
 }
 
 function csvEscape(value) {
@@ -229,6 +334,10 @@ function buildGmailUrl(payload, fileName) {
     `Contato: ${toList(payload.contactName)}`,
     `E-mail: ${toList(payload.contactEmail)}`,
     `Telefone: ${toList(payload.contactPhone)}`,
+    `Numero para chatbot: ${toList(payload.hasDedicatedNumber)}`,
+    `Setup WhatsApp: ${toList(payload.whatsappSetup)}`,
+    `Uso principal do bot: ${toList(payload.botUses)}`,
+    `Modo de automacao: ${toList(payload.botActionMode)}`,
     `Objetivos: ${toList(payload.goals)}`,
     `Prazo: ${toList(payload.goLive)}`,
     "",
@@ -266,14 +375,15 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  if (!validateGroups()) {
+  const formData = new FormData(form);
+  const payload = formDataToObject(formData);
+
+  if (!validateGroups(payload)) {
     return;
   }
 
   setSubmittingState(true);
 
-  const formData = new FormData(form);
-  const payload = formDataToObject(formData);
   const summary = buildSummary(payload);
   const csvContent = buildCsv(payload);
   const fileName = buildFileName(payload);
@@ -333,6 +443,7 @@ form.addEventListener("reset", () => {
   resultStatus.textContent = "";
   gmailLink.href = "#";
   groupRules.forEach((rule) => setGroupError(rule.name, ""));
+  setGroupError("automationActions", "");
   setSubmittingState(false);
 });
 
@@ -340,4 +451,8 @@ groupRules.forEach((rule) => {
   form.querySelectorAll(`[name="${rule.name}"]`).forEach((input) => {
     input.addEventListener("change", () => setGroupError(rule.name, ""));
   });
+});
+
+form.querySelectorAll('[name="botActionMode"], [name="automationActions"]').forEach((input) => {
+  input.addEventListener("change", () => setGroupError("automationActions", ""));
 });
