@@ -1,0 +1,422 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "FastAtende" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - img "Logo FastAtende" [ref=e5]
+    - navigation "Navegação principal" [ref=e6]:
+      - link "Solução" [ref=e7] [cursor=pointer]:
+        - /url: "#solucao"
+      - link "Processo" [ref=e8] [cursor=pointer]:
+        - /url: "#processo"
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: "#dashboard"
+      - link "Formulário" [ref=e10] [cursor=pointer]:
+        - /url: "#briefing"
+    - link "Solicitar proposta" [ref=e11] [cursor=pointer]:
+      - /url: "#briefing"
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Chatbot de IA no WhatsApp para empresas que precisam atender melhor e mais rápido
+        - heading "Seu atendimento ganha velocidade, contexto e escala sem perder o controle." [level=1] [ref=e16]
+        - paragraph [ref=e17]: A FastAtende implementa um chatbot de IA no WhatsApp para suporte, atendimento comercial e triagem, com fluxos personalizados para a rotina da sua empresa e dashboard sob medida quando a operação precisa de acompanhamento detalhado.
+        - generic [ref=e18]:
+          - link "Preencher briefing" [ref=e19] [cursor=pointer]:
+            - /url: "#briefing"
+          - link "Ver a solução" [ref=e20] [cursor=pointer]:
+            - /url: "#solucao"
+        - generic [ref=e21]:
+          - generic [ref=e22]: Atendimento 24/7
+          - generic [ref=e23]: Escalonamento para humano
+          - generic [ref=e24]: Implantação personalizada
+          - generic [ref=e25]: Dashboard opcional
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: Operação FastAtende
+          - heading "WhatsApp com IA treinada para responder, organizar e encaminhar." [level=2] [ref=e29]
+          - generic [ref=e30]:
+            - article [ref=e31]:
+              - strong [ref=e32]: Suporte
+              - generic [ref=e33]: Respostas frequentes, triagem e direcionamento.
+            - article [ref=e34]:
+              - strong [ref=e35]: Comercial
+              - generic [ref=e36]: Captação, qualificação e agendamento.
+            - article [ref=e37]:
+              - strong [ref=e38]: Dashboard
+              - generic [ref=e39]: Métricas, filas, SLAs e visibilidade da operação.
+            - article [ref=e40]:
+              - strong [ref=e41]: Handoff
+              - generic [ref=e42]: Transferência para atendente quando necessário.
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: Entregáveis
+          - list [ref=e45]:
+            - listitem [ref=e46]: Mapeamento do atendimento atual
+            - listitem [ref=e47]: Configuração do fluxo no WhatsApp
+            - listitem [ref=e48]: Base de respostas com IA
+            - listitem [ref=e49]: Painel personalizado se fizer sentido
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: O que a FastAtende entrega
+        - heading "Uma operação mais organizada do primeiro contato até a visão gerencial." [level=2] [ref=e53]
+        - paragraph [ref=e54]: O projeto pode começar com o chatbot de IA no WhatsApp e evoluir com integrações, regras de repasse e dashboard para supervisão da sua equipe.
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - generic [ref=e57]: "01"
+          - heading "Chatbot treinado com a realidade da sua empresa" [level=3] [ref=e58]
+          - paragraph [ref=e59]: Fluxos, tom de voz, perguntas frequentes, produtos, processos internos e políticas de atendimento.
+        - article [ref=e60]:
+          - generic [ref=e61]: "02"
+          - heading "Triagem inteligente no WhatsApp" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Classificação de demandas, coleta de dados do cliente e encaminhamento para o setor certo.
+        - article [ref=e64]:
+          - generic [ref=e65]: "03"
+          - heading "Escala sem perder contexto" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Histórico organizado, repasse para atendimento humano e continuidade do suporte quando o caso exigir.
+        - article [ref=e68]:
+          - generic [ref=e69]: "04"
+          - heading "Dashboard personalizado quando necessário" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Indicadores de volume, tempo de resposta, temas recorrentes, produtividade e visão executiva.
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: Como funciona
+        - heading "Implantação feita para caber na sua operação, não o contrário." [level=2] [ref=e75]
+      - generic [ref=e76]:
+        - article [ref=e77]:
+          - generic [ref=e78]: "1"
+          - heading "Diagnóstico" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Entendemos canal, volume, tipo de demanda, regras de atendimento e metas do projeto.
+        - article [ref=e81]:
+          - generic [ref=e82]: "2"
+          - heading "Modelagem" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Desenhamos fluxos, conteúdo de resposta, integrações e pontos de transferência para humano.
+        - article [ref=e85]:
+          - generic [ref=e86]: "3"
+          - heading "Implantação" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Configuramos o bot, estruturamos a base de conhecimento e ajustamos o comportamento da IA.
+        - article [ref=e89]:
+          - generic [ref=e90]: "4"
+          - heading "Acompanhamento" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Monitoramos performance, refinamos respostas e construímos dashboard se a operação precisar.
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]: Dashboard sob medida
+        - heading "Quando a empresa precisa enxergar tudo, a gente transforma conversa em gestão." [level=2] [ref=e96]
+        - paragraph [ref=e97]: Para operações com maior volume, múltiplos atendentes ou necessidade de acompanhamento executivo, a FastAtende também desenvolve dashboard para centralizar indicadores, performance, gargalos e oportunidades.
+      - generic [ref=e98]:
+        - article [ref=e99]:
+          - heading "Visão operacional" [level=3] [ref=e100]
+          - paragraph [ref=e101]: Filas, temas mais frequentes, tempo médio de resposta, repasses para humano e horas de pico.
+        - article [ref=e102]:
+          - heading "Visão gerencial" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Volume por unidade, qualidade de atendimento, produtividade, conversão e evolução dos indicadores.
+        - article [ref=e105]:
+          - heading "Visão estratégica" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Decisões apoiadas por dados reais da operação para expansão, treinamento e otimização contínua.
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - generic [ref=e110]: Formulário comercial
+        - heading "Preencha o briefing para receber uma proposta alinhada ao seu cenário." [level=2] [ref=e111]
+        - paragraph [ref=e112]: Este formulário reúne as informações principais para entendermos a operação, o objetivo do chatbot, necessidades de integração e se o dashboard faz sentido para o seu caso.
+      - generic [ref=e113]:
+        - complementary [ref=e114]:
+          - generic [ref=e115]:
+            - heading "O que vamos analisar" [level=3] [ref=e116]
+            - list [ref=e117]:
+              - listitem [ref=e118]: Contexto da empresa e responsável pelo projeto
+              - listitem [ref=e119]: Volume e tipo de atendimento atual
+              - listitem [ref=e120]: Objetivos do bot no WhatsApp
+              - listitem [ref=e121]: Integrações, regras e repasses
+              - listitem [ref=e122]: Necessidade de dashboard e indicadores
+              - listitem [ref=e123]: Prazo, orçamento e critérios de sucesso
+          - generic [ref=e124]:
+            - heading "Resultado do envio" [level=3] [ref=e125]
+            - paragraph [ref=e126]: Ao clicar em enviar, o site baixa automaticamente uma tabela em CSV com o briefing e abre um rascunho no Gmail para o cliente mandar esse arquivo para o atendimento da FastAtende.
+            - list [ref=e127]:
+              - listitem [ref=e128]: Preencha todo o formulário.
+              - listitem [ref=e129]: Clique em "Baixar tabela e abrir Gmail".
+              - listitem [ref=e130]: Anexe o arquivo CSV baixado na pasta de Downloads.
+              - listitem [ref=e131]:
+                - text: Envie o e-mail para
+                - strong [ref=e132]: fastatende.comercial@gmail.com
+                - text: .
+        - generic [ref=e134]:
+          - group "1. Dados da empresa" [ref=e135]:
+            - generic [ref=e136]: 1. Dados da empresa
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - text: Empresa
+                - textbox "Empresa" [ref=e139]:
+                  - /placeholder: Nome da empresa
+              - generic [ref=e140]:
+                - text: Nome fantasia
+                - textbox "Nome fantasia" [ref=e141]:
+                  - /placeholder: Como a marca é conhecida
+              - generic [ref=e142]:
+                - text: CNPJ
+                - textbox "CNPJ" [ref=e143]:
+                  - /placeholder: 00.000.000/0000-00
+              - generic [ref=e144]:
+                - text: Site
+                - textbox "Site" [ref=e145]:
+                  - /placeholder: "Ex.: empresa.com ou https://empresa.com"
+              - generic [ref=e146]:
+                - text: Segmento
+                - combobox "Segmento" [ref=e147]:
+                  - option "Selecione" [selected]
+                  - option "Varejo"
+                  - option "Saúde"
+                  - option "Educação"
+                  - option "Imobiliário"
+                  - option "Serviços"
+                  - option "Jurídico"
+                  - option "Logística"
+                  - option "Financeiro"
+                  - option "Tecnologia"
+                  - option "Outro"
+              - generic [ref=e148]:
+                - text: Porte da empresa
+                - combobox "Porte da empresa" [ref=e149]:
+                  - option "Selecione" [selected]
+                  - option "Microempresa"
+                  - option "Pequena empresa"
+                  - option "Média empresa"
+                  - option "Grande empresa"
+              - generic [ref=e150]:
+                - text: Cidade / Estado
+                - textbox "Cidade / Estado" [ref=e151]:
+                  - /placeholder: "Ex.: Curitiba / PR"
+              - generic [ref=e152]:
+                - text: Quantas unidades ou filiais?
+                - spinbutton "Quantas unidades ou filiais?" [ref=e153]
+          - group "2. Responsável pelo projeto" [ref=e154]:
+            - generic [ref=e155]: 2. Responsável pelo projeto
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - text: Nome do responsável
+                - textbox "Nome do responsável" [ref=e158]:
+                  - /placeholder: Nome completo
+              - generic [ref=e159]:
+                - text: Cargo
+                - textbox "Cargo" [ref=e160]:
+                  - /placeholder: "Ex.: gerente, diretor, dono"
+              - generic [ref=e161]:
+                - text: E-mail
+                - textbox "E-mail" [ref=e162]:
+                  - /placeholder: voce@empresa.com
+              - generic [ref=e163]:
+                - text: WhatsApp / telefone
+                - textbox "WhatsApp / telefone" [ref=e164]:
+                  - /placeholder: (00) 00000-0000
+          - group "3. Atendimento atual" [ref=e165]:
+            - generic [ref=e166]: 3. Atendimento atual
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]: Canais usados hoje
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - checkbox "WhatsApp" [ref=e172]
+                    - text: WhatsApp
+                  - generic [ref=e173]:
+                    - checkbox "Instagram" [ref=e174]
+                    - text: Instagram
+                  - generic [ref=e175]:
+                    - checkbox "Site" [ref=e176]
+                    - text: Site
+                  - generic [ref=e177]:
+                    - checkbox "Telefone" [ref=e178]
+                    - text: Telefone
+                  - generic [ref=e179]:
+                    - checkbox "E-mail" [ref=e180]
+                    - text: E-mail
+                  - generic [ref=e181]:
+                    - checkbox "CRM / help desk" [ref=e182]
+                    - text: CRM / help desk
+              - generic [ref=e184]:
+                - text: Volume mensal de atendimentos
+                - combobox "Volume mensal de atendimentos" [ref=e185]:
+                  - option "Selecione" [selected]
+                  - option "Até 500"
+                  - option "500 a 2.000"
+                  - option "2.000 a 5.000"
+                  - option "5.000 a 10.000"
+                  - option "Mais de 10.000"
+              - generic [ref=e186]:
+                - text: Tamanho da equipe atual de atendimento
+                - combobox "Tamanho da equipe atual de atendimento" [ref=e187]:
+                  - option "Selecione" [selected]
+                  - option "1 a 3 pessoas"
+                  - option "4 a 10 pessoas"
+                  - option "11 a 25 pessoas"
+                  - option "Mais de 25 pessoas"
+              - generic [ref=e188]:
+                - text: Horário de atendimento
+                - textbox "Horário de atendimento" [ref=e189]:
+                  - /placeholder: "Ex.: seg a sex, 8h às 18h"
+              - generic [ref=e190]:
+                - text: Horários de pico
+                - textbox "Horários de pico" [ref=e191]:
+                  - /placeholder: "Ex.: 9h às 11h e 14h às 17h"
+              - generic [ref=e192]:
+                - text: Principais demandas recebidas
+                - textbox "Principais demandas recebidas" [ref=e193]:
+                  - /placeholder: "Ex.: dúvidas sobre pedidos, suporte técnico, agendamento, segunda via, orçamento..."
+              - generic [ref=e194]:
+                - text: Ferramentas usadas hoje no atendimento
+                - textbox "Ferramentas usadas hoje no atendimento" [ref=e195]:
+                  - /placeholder: "Ex.: WhatsApp Business, CRM, planilhas, ERP, plataforma de help desk..."
+          - group "4. Escopo do chatbot de IA" [ref=e196]:
+            - generic [ref=e197]: 4. Escopo do chatbot de IA
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]: Objetivos do projeto
+                - generic [ref=e201]:
+                  - generic [ref=e202]:
+                    - checkbox "Reduzir tempo de resposta" [ref=e203]
+                    - text: Reduzir tempo de resposta
+                  - generic [ref=e204]:
+                    - checkbox "Automatizar perguntas frequentes" [ref=e205]
+                    - text: Automatizar perguntas frequentes
+                  - generic [ref=e206]:
+                    - checkbox "Qualificar leads" [ref=e207]
+                    - text: Qualificar leads
+                  - generic [ref=e208]:
+                    - checkbox "Aumentar conversão" [ref=e209]
+                    - text: Aumentar conversão
+                  - generic [ref=e210]:
+                    - checkbox "Escalar suporte" [ref=e211]
+                    - text: Escalar suporte
+                  - generic [ref=e212]:
+                    - checkbox "Organizar repasses para humano" [ref=e213]
+                    - text: Organizar repasses para humano
+              - generic [ref=e215]:
+                - text: Casos de uso esperados
+                - textbox "Casos de uso esperados" [ref=e216]:
+                  - /placeholder: Descreva o que o bot deve fazer no WhatsApp, como responder, coletar ou encaminhar.
+              - generic [ref=e217]:
+                - text: Base de conhecimento disponível
+                - textbox "Base de conhecimento disponível" [ref=e218]:
+                  - /placeholder: Links, FAQs, PDFs, catálogo, documentos internos, scripts de atendimento...
+              - generic [ref=e219]:
+                - text: Quando deve transferir para humano?
+                - textbox "Quando deve transferir para humano?" [ref=e220]:
+                  - /placeholder: "Ex.: casos críticos, cliente irritado, negociação avançada, dúvida fora do escopo..."
+              - generic [ref=e221]:
+                - text: Integrações desejadas
+                - textbox "Integrações desejadas" [ref=e222]:
+                  - /placeholder: "Ex.: CRM, ERP, agenda, sistema interno, planilhas, API própria..."
+              - generic [ref=e223]:
+                - text: Idiomas necessários
+                - textbox "Idiomas necessários" [ref=e224]:
+                  - /placeholder: "Ex.: português, inglês, espanhol"
+              - generic [ref=e225]:
+                - text: Tom de voz do atendimento
+                - combobox "Tom de voz do atendimento" [ref=e226]:
+                  - option "Selecione" [selected]
+                  - option "Formal"
+                  - option "Consultivo"
+                  - option "Amigável"
+                  - option "Objetivo"
+                  - option "Misto, conforme contexto"
+          - group "5. Dashboard e gestão" [ref=e227]:
+            - generic [ref=e228]: 5. Dashboard e gestão
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - generic [ref=e231]: Precisa de dashboard?
+                - generic [ref=e232]:
+                  - generic [ref=e233]:
+                    - radio "Sim" [ref=e234]
+                    - text: Sim
+                  - generic [ref=e235]:
+                    - radio "Talvez, quero avaliar" [ref=e236]
+                    - text: Talvez, quero avaliar
+                  - generic [ref=e237]:
+                    - radio "Não neste momento" [ref=e238]
+                    - text: Não neste momento
+              - generic [ref=e239]:
+                - text: Quantas pessoas precisam acessar o painel?
+                - spinbutton "Quantas pessoas precisam acessar o painel?" [ref=e240]
+              - generic [ref=e241]:
+                - generic [ref=e242]: Indicadores desejados
+                - generic [ref=e243]:
+                  - generic [ref=e244]:
+                    - checkbox "Volume de atendimentos" [ref=e245]
+                    - text: Volume de atendimentos
+                  - generic [ref=e246]:
+                    - checkbox "Tempo médio de resposta" [ref=e247]
+                    - text: Tempo médio de resposta
+                  - generic [ref=e248]:
+                    - checkbox "Temas mais recorrentes" [ref=e249]
+                    - text: Temas mais recorrentes
+                  - generic [ref=e250]:
+                    - checkbox "Taxa de transferência para humano" [ref=e251]
+                    - text: Taxa de transferência para humano
+                  - generic [ref=e252]:
+                    - checkbox "Conversão" [ref=e253]
+                    - text: Conversão
+                  - generic [ref=e254]:
+                    - checkbox "Produtividade por unidade ou equipe" [ref=e255]
+                    - text: Produtividade por unidade ou equipe
+              - generic [ref=e256]:
+                - text: Frequência de acompanhamento
+                - combobox "Frequência de acompanhamento" [ref=e257]:
+                  - option "Selecione" [selected]
+                  - option "Diária"
+                  - option "Semanal"
+                  - option "Quinzenal"
+                  - option "Mensal"
+              - generic [ref=e258]:
+                - generic [ref=e259]: Há exigência de LGPD / compliance?
+                - generic [ref=e260]:
+                  - generic [ref=e261]:
+                    - radio "Sim" [ref=e262]
+                    - text: Sim
+                  - generic [ref=e263]:
+                    - radio "Não" [ref=e264]
+                    - text: Não
+                  - generic [ref=e265]:
+                    - radio "Preciso entender melhor" [ref=e266]
+                    - text: Preciso entender melhor
+          - group "6. Implantação e proposta" [ref=e267]:
+            - generic [ref=e268]: 6. Implantação e proposta
+            - generic [ref=e269]:
+              - generic [ref=e270]:
+                - text: Prazo desejado para entrar em operação
+                - combobox "Prazo desejado para entrar em operação" [ref=e271]:
+                  - option "Selecione" [selected]
+                  - option "Urgente, nas próximas 2 semanas"
+                  - option "Em até 30 dias"
+                  - option "Em até 60 dias"
+                  - option "Sem prazo fechado ainda"
+              - generic [ref=e272]:
+                - text: Faixa de investimento prevista
+                - combobox "Faixa de investimento prevista" [ref=e273]:
+                  - option "Selecione" [selected]
+                  - option "Ainda não defini"
+                  - option "Até R$ 3 mil"
+                  - option "R$ 3 mil a R$ 8 mil"
+                  - option "R$ 8 mil a R$ 20 mil"
+                  - option "Acima de R$ 20 mil"
+              - generic [ref=e274]:
+                - text: Como é o processo de aprovação interna?
+                - textbox "Como é o processo de aprovação interna?" [ref=e275]:
+                  - /placeholder: Quem decide, quem aprova, e o que precisa estar na proposta?
+              - generic [ref=e276]:
+                - text: Como vocês vão medir sucesso nesse projeto?
+                - textbox "Como vocês vão medir sucesso nesse projeto?" [ref=e277]:
+                  - /placeholder: "Ex.: reduzir fila, responder mais rápido, melhorar conversão, ganhar visibilidade..."
+              - generic [ref=e278]:
+                - text: Informações adicionais
+                - textbox "Informações adicionais" [ref=e279]:
+                  - /placeholder: Conte qualquer detalhe importante para a proposta.
+              - generic [ref=e280]:
+                - checkbox "Autorizo o contato da FastAtende para apresentar proposta, esclarecimentos e próximos passos do projeto." [ref=e281]
+                - generic [ref=e282]: Autorizo o contato da FastAtende para apresentar proposta, esclarecimentos e próximos passos do projeto.
+          - generic [ref=e283]:
+            - button "Baixar tabela e abrir Gmail" [ref=e284] [cursor=pointer]
+            - button "Limpar formulário" [ref=e285] [cursor=pointer]
+          - paragraph [ref=e286]: O navegador nao consegue anexar arquivo automaticamente no Gmail. Por isso, a tabela sera baixada e o cliente precisara anexar o CSV manualmente antes de enviar a mensagem.
+  - contentinfo [ref=e287]:
+    - paragraph [ref=e288]:
+      - strong [ref=e289]: FastAtende
+      - text: "| IA no WhatsApp para suporte, atendimento e operação com visibilidade."
+    - paragraph [ref=e290]: © 2026 FastAtende. Todos os direitos reservados.

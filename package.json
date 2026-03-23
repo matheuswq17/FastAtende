@@ -1,0 +1,15 @@
+{
+  "name": "fastatende-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page da FastAtende com formulario e recebimento de leads em CSV/JSON e e-mail opcional.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "landing": "node server.js --port 3005",
+    "site": "node server.js --port 3005"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
