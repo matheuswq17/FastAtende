@@ -15,26 +15,6 @@ let latestGmailUrl = "";
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
 const recipientEmail = "fastatende.comercial@gmail.com";
-const actionModesThatRequireActions = new Set([
-  "Executar acoes",
-  "Responder e executar acoes"
-]);
-
-const groupRules = [
-  {
-    name: "channels",
-    message: "Selecione pelo menos um canal usado hoje."
-  },
-  {
-    name: "goals",
-    message: "Selecione pelo menos um objetivo do projeto."
-  },
-  {
-    name: "botUses",
-    message: "Selecione pelo menos um uso principal do bot."
-  }
-];
-
 const briefingSections = [
   {
     title: "1. DADOS DA EMPRESA",
@@ -232,30 +212,6 @@ function toList(value) {
   return value;
 }
 
-function validateGroups(payload) {
-  let isValid = true;
-
-  groupRules.forEach((rule) => {
-    const values = getCheckedValues(rule.name);
-    if (values.length === 0) {
-      setGroupError(rule.name, rule.message);
-      isValid = false;
-      return;
-    }
-
-    setGroupError(rule.name, "");
-  });
-
-  if (actionModesThatRequireActions.has(payload.botActionMode) && getCheckedValues("automationActions").length === 0) {
-    setGroupError("automationActions", "Selecione pelo menos uma acao que o bot deve executar.");
-    isValid = false;
-  } else {
-    setGroupError("automationActions", "");
-  }
-
-  return isValid;
-}
-
 function buildSummary(payload) {
   const lines = ["NOVO BRIEFING COMERCIAL - FASTATENDE", ""];
 
@@ -371,16 +327,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   resultStatus.textContent = "";
 
-  if (!form.reportValidity()) {
-    return;
-  }
-
   const formData = new FormData(form);
   const payload = formDataToObject(formData);
-
-  if (!validateGroups(payload)) {
-    return;
-  }
 
   setSubmittingState(true);
 
@@ -442,17 +390,5 @@ form.addEventListener("reset", () => {
   result.hidden = true;
   resultStatus.textContent = "";
   gmailLink.href = "#";
-  groupRules.forEach((rule) => setGroupError(rule.name, ""));
-  setGroupError("automationActions", "");
   setSubmittingState(false);
-});
-
-groupRules.forEach((rule) => {
-  form.querySelectorAll(`[name="${rule.name}"]`).forEach((input) => {
-    input.addEventListener("change", () => setGroupError(rule.name, ""));
-  });
-});
-
-form.querySelectorAll('[name="botActionMode"], [name="automationActions"]').forEach((input) => {
-  input.addEventListener("change", () => setGroupError("automationActions", ""));
 });
