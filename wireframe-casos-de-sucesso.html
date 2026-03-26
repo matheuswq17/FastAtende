@@ -14,24 +14,64 @@
     /* ── Page hero (sub-page variant) ── */
     .page-hero {
       padding: 72px 0 48px;
-      text-align: center;
+    }
+
+    .page-hero__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .page-hero h1 {
-      margin: 18px auto 18px;
+      margin: 0;
       font-family: "Sora", sans-serif;
       font-size: clamp(2.4rem, 4.5vw, 4rem);
       line-height: 1.06;
       letter-spacing: -0.05em;
-      max-width: 780px;
+      align-self: center;
     }
 
     .page-hero__sub {
       color: var(--muted);
       font-size: 1.06rem;
       line-height: 1.75;
-      max-width: 580px;
-      margin: 0 auto 32px;
+      max-width: 480px;
+      margin: 18px 0 0;
+    }
+
+    .page-hero__agg-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .page-hero__agg-stat {
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .page-hero__agg-value {
+      display: block;
+      font-family: "Sora", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--secondary);
+      line-height: 1;
+    }
+
+    .page-hero__agg-label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 6px;
+      line-height: 1.4;
     }
 
     /* ── Filter bar ── */
@@ -312,6 +352,15 @@
       .featured-inner {
         grid-template-columns: 1fr;
       }
+
+      .page-hero__left {
+        align-items: center;
+        text-align: center;
+      }
+
+      .page-hero__sub {
+        max-width: 560px;
+      }
     }
 
     @media (max-width: 860px) {
@@ -351,11 +400,27 @@
   <main>
     <!-- ── Hero ── -->
     <section class="hero page-hero">
-      <span class="eyebrow">Resultados reais</span>
+      <div class="page-hero__left">
+        <span class="eyebrow">Resultados reais</span>
+        <p class="page-hero__sub">
+          Da clínica ao restaurante, do imobiliário ao varejo — veja como a automação no WhatsApp muda a operação na prática.
+        </p>
+        <div class="page-hero__agg-stats">
+          <div class="page-hero__agg-stat">
+            <span class="page-hero__agg-value">−65%</span>
+            <span class="page-hero__agg-label">Redução média no tempo de atendimento</span>
+          </div>
+          <div class="page-hero__agg-stat">
+            <span class="page-hero__agg-value">88%</span>
+            <span class="page-hero__agg-label">CSAT médio entre os clientes</span>
+          </div>
+          <div class="page-hero__agg-stat">
+            <span class="page-hero__agg-value">6</span>
+            <span class="page-hero__agg-label">Empresas transformadas com IA</span>
+          </div>
+        </div>
+      </div>
       <h1>Empresas que transformaram o atendimento com FastAtende</h1>
-      <p class="page-hero__sub">
-        Da clínica ao restaurante, do imobiliário ao varejo — veja como a automação no WhatsApp muda a operação na prática.
-      </p>
       <div class="filter-bar" role="group" aria-label="Filtrar por segmento">
         <button class="filter-pill filter-pill--active" data-filter="todos">Todos</button>
         <button class="filter-pill" data-filter="saude">Saúde</button>
