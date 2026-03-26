@@ -52,6 +52,18 @@ app.get("/icone_fastatende.png", (_req, res) => {
   });
 });
 
+app.get("/casos-de-sucesso", (_req, res) => {
+  res.sendFile(path.join(ROOT_DIR, "wireframe-casos-de-sucesso.html"));
+});
+
+app.get("/precos", (_req, res) => {
+  res.sendFile(path.join(ROOT_DIR, "wireframe-precos.html"));
+});
+
+app.get("/faq", (_req, res) => {
+  res.sendFile(path.join(ROOT_DIR, "wireframe-faq.html"));
+});
+
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true });
 });

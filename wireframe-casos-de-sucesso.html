@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veja como empresas transformaram o atendimento com a FastAtende. Casos reais de automação no WhatsApp com IA.">
+  <title>Casos de Sucesso | FastAtende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="icone_fastatende.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page hero (sub-page variant) ── */
+    .page-hero {
+      padding: 72px 0 48px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      margin: 18px auto 18px;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+      max-width: 780px;
+    }
+
+    .page-hero__sub {
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.75;
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .filter-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      font-family: inherit;
+    }
+
+    .filter-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text);
+    }
+
+    .filter-pill--active {
+      background: linear-gradient(135deg, var(--primary), #73efff);
+      color: #03111f;
+      border-color: transparent;
+    }
+
+    /* ── Cases grid ── */
+    .cases-section {
+      padding-top: 8px;
+    }
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 36px;
+    }
+
+    .case-card {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(16, 25, 86, 0.86), rgba(8, 13, 45, 0.88));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 18px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .case-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .case-card__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .case-card__company {
+      font-family: "Sora", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0 0 4px;
+    }
+
+    .case-card__location {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .segment-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(0, 210, 255, 0.12);
+      color: var(--primary);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .case-card__challenge {
+      font-size: 0.94rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .case-card__metrics {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-top: 6px;
+      border-top: 1px solid var(--line);
+    }
+
+    .metric__value {
+      display: block;
+      font-family: "Sora", sans-serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--secondary);
+      line-height: 1;
+    }
+
+    .metric__label {
+      display: block;
+      font-size: 0.76rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    /* ── Featured case ── */
+    .featured-section {
+      padding-top: 8px;
+    }
+
+    .featured-inner {
+      padding: 48px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(0, 210, 255, 0.09), rgba(133, 247, 199, 0.07));
+      border: 1px solid rgba(0, 210, 255, 0.2);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .featured-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .featured-label::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    .featured-inner h2 {
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+      margin: 0 0 18px;
+    }
+
+    .featured-story {
+      color: var(--muted);
+      line-height: 1.75;
+      margin: 0 0 14px;
+    }
+
+    .featured-metrics {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .featured-metrics .metric__value {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    .featured-right {
+      display: grid;
+      gap: 18px;
+    }
+
+    .blockquote {
+      padding: 26px 28px;
+      border-radius: var(--radius-lg);
+      background: rgba(8, 13, 45, 0.7);
+      border-left: 4px solid var(--primary);
+      font-style: italic;
+      color: var(--text);
+      font-size: 1.04rem;
+      line-height: 1.72;
+      margin: 0;
+    }
+
+    .blockquote cite {
+      display: block;
+      margin-top: 14px;
+      font-style: normal;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .result-card {
+      padding: 20px 22px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .result-card h4 {
+      font-family: "Sora", sans-serif;
+      font-size: 0.92rem;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+      color: var(--secondary);
+    }
+
+    .result-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.62;
+      margin: 0;
+    }
+
+    /* ── CTA section ── */
+    .cta-content {
+      text-align: center;
+    }
+
+    .cta-content h2 {
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+      color: var(--text-dark);
+      margin: 18px 0;
+    }
+
+    .cta-content p {
+      color: var(--muted-dark);
+      font-size: 1.04rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1100px) {
+      .featured-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-inner {
+        padding: 28px;
+        gap: 28px;
+      }
+
+      .featured-metrics {
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-bg"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FastAtende — Página inicial">
+      <span class="brand__logo-frame">
+        <img id="brand-logo" class="brand__logo" src="logo-fastatende.png" alt="Logo FastAtende">
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="wireframe-casos-de-sucesso.html" aria-current="page">Casos de Sucesso</a>
+      <a href="wireframe-precos.html">Preços</a>
+      <a href="wireframe-faq.html">FAQ</a>
+    </nav>
+    <a class="button button--ghost" href="index.html#briefing">Solicitar proposta</a>
+  </header>
+
+  <main>
+    <!-- ── Hero ── -->
+    <section class="hero page-hero">
+      <span class="eyebrow">Resultados reais</span>
+      <h1>Empresas que transformaram o atendimento com FastAtende</h1>
+      <p class="page-hero__sub">
+        Da clínica ao restaurante, do imobiliário ao varejo — veja como a automação no WhatsApp muda a operação na prática.
+      </p>
+      <div class="filter-bar" role="group" aria-label="Filtrar por segmento">
+        <button class="filter-pill filter-pill--active" data-filter="todos">Todos</button>
+        <button class="filter-pill" data-filter="saude">Saúde</button>
+        <button class="filter-pill" data-filter="imobiliario">Imobiliário</button>
+        <button class="filter-pill" data-filter="servicos">Serviços</button>
+        <button class="filter-pill" data-filter="educacao">Educação</button>
+        <button class="filter-pill" data-filter="varejo">Varejo</button>
+        <button class="filter-pill" data-filter="tecnologia">Tecnologia</button>
+      </div>
+    </section>
+
+    <!-- ── Cases grid ── -->
+    <section class="section cases-section" aria-label="Casos de sucesso">
+      <div class="cases-grid" id="cases-grid">
+
+        <!-- Clínica MedVita -->
+        <article class="case-card" data-segment="saude">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">Clínica MedVita</p>
+              <p class="case-card__location">Curitiba / PR</p>
+            </div>
+            <span class="segment-badge">Saúde</span>
+          </div>
+          <p class="case-card__challenge">
+            Fila de espera de até 3 dias para agendamento, com a secretaria sobrecarregada de mensagens no WhatsApp fora do horário comercial.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">−70%</span>
+              <span class="metric__label">Tempo de espera</span>
+            </div>
+            <div>
+              <span class="metric__value">85%</span>
+              <span class="metric__label">Resolvidos sem humano</span>
+            </div>
+            <div>
+              <span class="metric__value">+40%</span>
+              <span class="metric__label">Confirmações de consulta</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Imobiliária Horizonte -->
+        <article class="case-card" data-segment="imobiliario">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">Imobiliária Horizonte</p>
+              <p class="case-card__location">São Paulo / SP</p>
+            </div>
+            <span class="segment-badge">Imobiliário</span>
+          </div>
+          <p class="case-card__challenge">
+            Equipe pequena perdendo leads fora do horário comercial, sem forma rápida de qualificar interesse e disponibilidade do cliente.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">3×</span>
+              <span class="metric__label">Mais leads capturados</span>
+            </div>
+            <div>
+              <span class="metric__value">−60%</span>
+              <span class="metric__label">Tempo de triagem</span>
+            </div>
+            <div>
+              <span class="metric__value">24/7</span>
+              <span class="metric__label">Captação ativa</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Restaurante Bella Massa -->
+        <article class="case-card" data-segment="servicos">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">Restaurante Bella Massa</p>
+              <p class="case-card__location">Porto Alegre / RS</p>
+            </div>
+            <span class="segment-badge">Serviços</span>
+          </div>
+          <p class="case-card__challenge">
+            Pedidos por WhatsApp travando a equipe no horário de pico, com erros frequentes e confirmações demoradas.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">80%</span>
+              <span class="metric__label">Pedidos automatizados</span>
+            </div>
+            <div>
+              <span class="metric__value">+25%</span>
+              <span class="metric__label">Ticket médio</span>
+            </div>
+            <div>
+              <span class="metric__value">0</span>
+              <span class="metric__label">Erros de pedido</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Escola Progressiva -->
+        <article class="case-card" data-segment="educacao">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">Escola Progressiva</p>
+              <p class="case-card__location">Belo Horizonte / MG</p>
+            </div>
+            <span class="segment-badge">Educação</span>
+          </div>
+          <p class="case-card__challenge">
+            Secretaria sobrecarregada com dúvidas repetitivas sobre matrícula, mensalidade e calendário, sem conseguir focar no atendimento presencial.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">−65%</span>
+              <span class="metric__label">Volume para humano</span>
+            </div>
+            <div>
+              <span class="metric__value">0</span>
+              <span class="metric__label">Contratações extras</span>
+            </div>
+            <div>
+              <span class="metric__value">92%</span>
+              <span class="metric__label">CSAT</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Moda Express -->
+        <article class="case-card" data-segment="varejo">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">Moda Express</p>
+              <p class="case-card__location">Florianópolis / SC</p>
+            </div>
+            <span class="segment-badge">Varejo</span>
+          </div>
+          <p class="case-card__challenge">
+            Alta taxa de abandono nas conversas no WhatsApp sem conversão e dúvidas sobre tamanho, estoque e entrega sem resposta rápida.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">2×</span>
+              <span class="metric__label">Taxa de conversão</span>
+            </div>
+            <div>
+              <span class="metric__value">91%</span>
+              <span class="metric__label">CSAT</span>
+            </div>
+            <div>
+              <span class="metric__value">−50%</span>
+              <span class="metric__label">Tempo de resposta</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- TechSolve -->
+        <article class="case-card" data-segment="tecnologia">
+          <div class="case-card__top">
+            <div>
+              <p class="case-card__company">TechSolve</p>
+              <p class="case-card__location">100% remoto</p>
+            </div>
+            <span class="segment-badge">Tecnologia</span>
+          </div>
+          <p class="case-card__challenge">
+            Equipe de suporte L1 sobrecarregada com problemas básicos repetitivos, sem triagem eficiente e com alto volume de tickets abertos.
+          </p>
+          <div class="case-card__metrics">
+            <div>
+              <span class="metric__value">90%</span>
+              <span class="metric__label">Resolução 1º contato</span>
+            </div>
+            <div>
+              <span class="metric__value">−45%</span>
+              <span class="metric__label">Tickets abertos</span>
+            </div>
+            <div>
+              <span class="metric__value">4h</span>
+              <span class="metric__label">SLA garantido</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── Featured case ── -->
+    <section class="section featured-section" aria-labelledby="featured-title">
+      <div class="featured-inner">
+        <div>
+          <p class="featured-label">Caso em destaque</p>
+          <h2 id="featured-title">Clínica MedVita: de fila de 3 dias para atendimento imediato no WhatsApp</h2>
+          <p class="featured-story">
+            A MedVita atende mais de 800 pacientes por mês em três especialidades. Antes da FastAtende, a secretaria recebia mais de 200 mensagens por dia no WhatsApp fora do horário, sem conseguir responder a tempo. O agendamento levava até 3 dias e o índice de no-show era alto.
+          </p>
+          <p class="featured-story">
+            Com o bot implementado, o paciente agenda 24 horas por dia, recebe confirmação automática e é lembrado um dia antes da consulta. A secretaria agora foca nos casos que realmente precisam de atenção humana.
+          </p>
+          <div class="featured-metrics">
+            <div>
+              <span class="metric__value" style="color: var(--primary); font-size: 2.2rem;">−70%</span>
+              <span class="metric__label">Tempo de espera</span>
+            </div>
+            <div>
+              <span class="metric__value" style="color: var(--primary); font-size: 2.2rem;">85%</span>
+              <span class="metric__label">Atendidos pelo bot</span>
+            </div>
+            <div>
+              <span class="metric__value" style="color: var(--primary); font-size: 2.2rem;">+40%</span>
+              <span class="metric__label">Confirmações de consulta</span>
+            </div>
+            <div>
+              <span class="metric__value" style="color: var(--primary); font-size: 2.2rem;">18</span>
+              <span class="metric__label">Dias até o go-live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-right">
+          <blockquote class="blockquote">
+            "Antes da FastAtende, eu chegava segunda de manhã com 80 mensagens não lidas. Hoje o bot resolve a grande maioria e a equipe cuida só do que importa."
+            <cite>— Dra. Fernanda Lima, Diretora Clínica, MedVita</cite>
+          </blockquote>
+          <div class="result-card">
+            <h4>Solução implementada</h4>
+            <p>Bot de agendamento com fluxo por especialidade, confirmação automática, lembrete 24h antes e handoff para secretaria em casos que exigem atenção humana.</p>
+          </div>
+          <div class="result-card">
+            <h4>Plano utilizado</h4>
+            <p>Plano Profissional — múltiplos serviços, agendamento automático e suporte em tempo real durante a implantação.</p>
+          </div>
+          <a class="button" href="index.html#briefing" style="justify-self: start;">Quero um resultado assim</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section section--light" aria-labelledby="cta-title">
+      <div class="cta-content">
+        <span class="eyebrow eyebrow--dark">Próximo passo</span>
+        <h2 id="cta-title">Pronto para transformar o seu atendimento?</h2>
+        <p>Preencha o briefing e receba uma proposta personalizada para a realidade da sua empresa.</p>
+        <div class="cta-actions">
+          <a class="button" href="index.html#briefing">Preencher briefing</a>
+          <a class="button button--secondary" style="background: rgba(0,0,0,0.06); color: var(--text-dark); box-shadow: inset 0 0 0 1px var(--line-dark);" href="wireframe-precos.html">Ver planos e preços</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>FastAtende</strong> | IA no WhatsApp para suporte, atendimento e operação com visibilidade.</p>
+    <p>&copy; <span id="current-year"></span> FastAtende. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Segment filter
+    const pills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.case-card');
+
+    pills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        pills.forEach(function (p) { p.classList.remove('filter-pill--active'); });
+        pill.classList.add('filter-pill--active');
+
+        var filter = pill.dataset.filter;
+        var visible = 0;
+        cards.forEach(function (card) {
+          var match = filter === 'todos' || card.dataset.segment === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

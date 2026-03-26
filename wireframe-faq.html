@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perguntas frequentes sobre a FastAtende: WhatsApp API, IA e bot, integrações, LGPD e implantação.">
+  <title>Perguntas Frequentes | FastAtende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="icone_fastatende.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page hero ── */
+    .page-hero {
+      padding: 72px 0 48px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      margin: 18px auto;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+      max-width: 720px;
+    }
+
+    .page-hero__sub {
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.75;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    /* ── Topic filter bar ── */
+    .topic-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .topic-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      font-family: inherit;
+    }
+
+    .topic-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text);
+    }
+
+    .topic-pill--active {
+      background: linear-gradient(135deg, var(--primary), #73efff);
+      color: #03111f;
+      border-color: transparent;
+    }
+
+    /* ── FAQ sections ── */
+    .faq-body {
+      padding-top: 8px;
+      padding-bottom: 82px;
+    }
+
+    .faq-categories {
+      display: grid;
+      gap: 32px;
+    }
+
+    .faq-category {
+      /* visible state */
+    }
+
+    .faq-category-heading {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .faq-category-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: rgba(0, 210, 255, 0.1);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .faq-category-heading h2 {
+      font-family: "Sora", sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+
+    /* ── Accordion items ── */
+    .faq-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .faq-item {
+      border-radius: var(--radius-md);
+      background: linear-gradient(180deg, rgba(16, 25, 86, 0.76), rgba(8, 13, 45, 0.78));
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item--open {
+      border-color: rgba(0, 210, 255, 0.3);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.97rem;
+      color: var(--text);
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: inherit;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+    }
+
+    .faq-item--open .faq-question {
+      color: var(--primary);
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(0, 210, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1;
+      transition: transform 0.25s ease, background 0.2s;
+    }
+
+    .faq-item--open .faq-icon {
+      transform: rotate(45deg);
+      background: rgba(0, 210, 255, 0.2);
+    }
+
+    .faq-answer {
+      padding: 0 22px 20px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      line-height: 1.72;
+    }
+
+    .faq-answer p {
+      margin: 0 0 10px;
+    }
+
+    .faq-answer p:last-child {
+      margin: 0;
+    }
+
+    /* ── Still have questions CTA ── */
+    .still-cta {
+      text-align: center;
+    }
+
+    .still-cta h2 {
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.05em;
+      color: var(--text-dark);
+      margin: 18px 0;
+    }
+
+    .still-cta p {
+      color: var(--muted-dark);
+      font-size: 1.04rem;
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+
+    .still-cta-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-options {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--line-dark);
+      color: var(--text-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .contact-chip__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary-deep);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 860px) {
+      .faq-question {
+        font-size: 0.92rem;
+        padding: 16px 18px;
+      }
+
+      .faq-answer {
+        padding: 0 18px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-bg"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FastAtende — Página inicial">
+      <span class="brand__logo-frame">
+        <img id="brand-logo" class="brand__logo" src="logo-fastatende.png" alt="Logo FastAtende">
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="wireframe-casos-de-sucesso.html">Casos de Sucesso</a>
+      <a href="wireframe-precos.html">Preços</a>
+      <a href="wireframe-faq.html" aria-current="page">FAQ</a>
+    </nav>
+    <a class="button button--ghost" href="index.html#briefing">Solicitar proposta</a>
+  </header>
+
+  <main>
+    <!-- ── Hero ── -->
+    <section class="hero page-hero">
+      <span class="eyebrow">Dúvidas</span>
+      <h1>Tire suas dúvidas sobre a FastAtende</h1>
+      <p class="page-hero__sub">
+        Respondemos as principais perguntas sobre WhatsApp API, IA, integrações, LGPD e implantação.
+      </p>
+      <div class="topic-bar" role="group" aria-label="Filtrar por tema">
+        <button class="topic-pill topic-pill--active" data-topic="todos">Todos os temas</button>
+        <button class="topic-pill" data-topic="whatsapp">WhatsApp / Meta</button>
+        <button class="topic-pill" data-topic="ia">IA e Bot</button>
+        <button class="topic-pill" data-topic="integracoes">Integrações</button>
+        <button class="topic-pill" data-topic="lgpd">LGPD</button>
+        <button class="topic-pill" data-topic="implantacao">Implantação</button>
+      </div>
+    </section>
+
+    <!-- ── FAQ body ── -->
+    <section class="section faq-body" aria-label="Perguntas frequentes">
+      <div class="faq-categories" id="faq-categories">
+
+        <!-- WhatsApp / Meta -->
+        <div class="faq-category" data-category="whatsapp">
+          <div class="faq-category-heading">
+            <span class="faq-category-icon" aria-hidden="true">💬</span>
+            <h2>WhatsApp / Meta</h2>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O que preciso ter para usar o WhatsApp Business API?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Você precisa de um número de telefone dedicado (celular ou fixo) que possa receber SMS ou ligação para verificação. Não precisa ser um número novo — pode ser um existente, desde que seja migrado corretamente.</p>
+                <p>A FastAtende cuida de todo o processo de criação de conta no Meta Business Manager, Meta for Developers e da conta WhatsApp Business (WABA). Você só precisa liberar acessos quando solicitado.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Quanto tempo leva para ativar o número no WhatsApp API?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>O processo de verificação e aprovação pelo Meta leva entre 3 e 10 dias úteis, dependendo da análise. O desenvolvimento do bot acontece em paralelo durante esse período, então o prazo total do projeto não é impactado.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Preciso cancelar o meu WhatsApp Business atual?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim. O mesmo número não pode estar ativo no WhatsApp Business comum e na API ao mesmo tempo. A FastAtende orienta o processo de migração com antecedência para minimizar qualquer interrupção no atendimento.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- IA e Bot -->
+        <div class="faq-category" data-category="ia">
+          <div class="faq-category-heading">
+            <span class="faq-category-icon" aria-hidden="true">🤖</span>
+            <h2>IA e Bot</h2>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O bot consegue entender mensagens de voz?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim, no Plano Avançado. O suporte a transcrição por voz permite que o bot processe e responda a áudios enviados pelos clientes. Nos planos Essencial e Profissional, o bot responde apenas mensagens de texto.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Posso personalizar o tom de voz e as respostas do bot?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim. Toda a base de respostas é construída com o seu conteúdo: tom de voz, processos internos, perguntas frequentes, produtos, serviços e política de atendimento. O bot reflete a identidade da sua empresa, não um padrão genérico.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O bot pode transferir o atendimento para um humano?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim. O fluxo de handoff é desenhado na fase de modelagem do projeto. Você define quando e para quem o bot deve transferir — por tipo de demanda, palavra-chave, horário ou comportamento do cliente. O cliente é informado da transição conforme regras configuradas.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Integrações -->
+        <div class="faq-category" data-category="integracoes">
+          <div class="faq-category-heading">
+            <span class="faq-category-icon" aria-hidden="true">🔗</span>
+            <h2>Integrações</h2>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O bot se integra ao meu CRM ou sistema interno?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim, disponível no Plano Avançado. A FastAtende desenvolve integrações com APIs abertas, bancos de dados e sistemas com documentação disponível — CRM, ERP, plataformas de agendamento, sistemas de prontuário e outros.</p>
+                <p>Para sistemas sem API, avaliamos alternativas como webhooks, planilhas ou bancos de dados compartilhados.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O bot funciona com Google Agenda ou outros calendários?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim. Integração com Google Agenda está disponível no Plano Avançado. No Plano Profissional, o agendamento pode ser gerenciado diretamente pelo bot — com confirmação automática e lembrete — sem precisar de integração externa.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LGPD -->
+        <div class="faq-category" data-category="lgpd">
+          <div class="faq-category-heading">
+            <span class="faq-category-icon" aria-hidden="true">🔒</span>
+            <h2>LGPD e Segurança</h2>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Os dados dos meus clientes ficam seguros?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim. A FastAtende segue as diretrizes da Lei Geral de Proteção de Dados (LGPD). Podemos assinar NDA e/ou DPA conforme necessário para o seu setor. Os dados são tratados apenas para os fins definidos no escopo do projeto e não são compartilhados com terceiros.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                O bot pode coletar dados pessoais como CPF ou endereço?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Sim, desde que haja base legal para isso e o cliente seja devidamente informado. A FastAtende orienta a criação de mensagens de consentimento adequadas à LGPD, incluindo finalidade, forma de uso e direitos do titular.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Implantação -->
+        <div class="faq-category" data-category="implantacao">
+          <div class="faq-category-heading">
+            <span class="faq-category-icon" aria-hidden="true">🚀</span>
+            <h2>Implantação</h2>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Quanto tempo leva a implantação?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Entre 2 e 6 semanas, dependendo do plano e da complexidade dos fluxos. O processo de verificação do número no WhatsApp API acontece em paralelo com o desenvolvimento, sem estender o prazo total.</p>
+                <p>Após o briefing aprovado, a FastAtende apresenta um cronograma detalhado com os marcos do projeto.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Preciso de equipe de TI para contratar a FastAtende?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Não necessariamente. Para os Planos Essencial e Profissional, você precisa apenas de alguém para liberar acessos no Meta — o que pode ser feito pelo próprio responsável comercial. Para o Plano Avançado com integrações a sistemas internos, o envolvimento de TI pode ser necessário para liberar acesso às APIs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Como funciona o suporte após a entrega do projeto?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>A mensalidade inclui manutenção do bot, monitoramento de funcionamento e pequenos ajustes de conteúdo (textos, respostas e fluxo). O Plano Profissional inclui suporte em tempo real durante os primeiros meses.</p>
+                <p>Mudanças de escopo maiores — como novas integrações, novos funis ou funcionalidades adicionais — são orçadas separadamente como um novo projeto.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Still have questions ── -->
+    <section class="section section--light" aria-labelledby="still-title">
+      <div class="still-cta">
+        <span class="eyebrow eyebrow--dark">Fale com a gente</span>
+        <h2 id="still-title">Ainda tem alguma dúvida?</h2>
+        <p>Preencha o briefing e a equipe FastAtende entra em contato para esclarecer qualquer ponto antes de você tomar uma decisão.</p>
+        <div class="still-cta-actions">
+          <a class="button" href="index.html#briefing">Preencher briefing</a>
+          <a class="button button--secondary" style="background: rgba(0,0,0,0.06); color: var(--text-dark); box-shadow: inset 0 0 0 1px var(--line-dark);" href="wireframe-precos.html">Ver planos e preços</a>
+        </div>
+        <div class="contact-options">
+          <span class="contact-chip">
+            <span class="contact-chip__dot"></span>
+            fastatende.comercial@gmail.com
+          </span>
+          <span class="contact-chip">
+            <span class="contact-chip__dot"></span>
+            Resposta em até 1 dia útil
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>FastAtende</strong> | IA no WhatsApp para suporte, atendimento e operação com visibilidade.</p>
+    <p>&copy; <span id="current-year"></span> FastAtende. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // ── Topic filter ──
+    var topicPills = document.querySelectorAll('.topic-pill');
+    var faqCategories = document.querySelectorAll('.faq-category');
+
+    topicPills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        topicPills.forEach(function (p) { p.classList.remove('topic-pill--active'); });
+        pill.classList.add('topic-pill--active');
+
+        var topic = pill.dataset.topic;
+        faqCategories.forEach(function (cat) {
+          var match = topic === 'todos' || cat.dataset.category === topic;
+          cat.hidden = !match;
+        });
+      });
+    });
+
+    // ── Accordion ──
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var category = btn.closest('.faq-list');
+        var isOpen = item.classList.contains('faq-item--open');
+
+        // Close all in same category
+        category.querySelectorAll('.faq-item').forEach(function (i) {
+          i.classList.remove('faq-item--open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').hidden = true;
+        });
+
+        if (!isOpen) {
+          item.classList.add('faq-item--open');
+          btn.setAttribute('aria-expanded', 'true');
+          item.querySelector('.faq-answer').hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
